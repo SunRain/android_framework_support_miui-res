@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.internal.v5.view.menu.ActionMenuPrimaryItemButton android:id="@id/v5_icon_menu_bar_primary_item" style="@miui:style/V5.Widget.BottomBarIcon"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

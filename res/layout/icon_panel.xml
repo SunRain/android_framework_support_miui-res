@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/icon_panel_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:miui="http://schemas.android.com/apk/res/miui">
+    <ImageView android:id="@id/icon_panel_home_layer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    <ImageView android:id="@id/icon_panel_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <ImageView android:layout_gravity="top|left|center" android:id="@id/icon_panel_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+    <FrameLayout android:gravity="top|left|center" android:id="@id/icon_panel_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

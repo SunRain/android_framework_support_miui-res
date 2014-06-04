@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlphabetFastIndexerStyle">
+        <item name="indexerBackground">@drawable/alphabet_indexer_bg</item>
+        <item name="indexerTable">@array/alphabet_table</item>
+        <item name="indexerTextColor">@color/alphabet_indexer_text_color</item>
+        <item name="indexerTextHighlightColor">@color/alphabet_indexer_highlight_text_color</item>
+        <item name="indexerTextSize">@dimen/alphabet_indexer_text_size</item>
+        <item name="overlayBackground">@drawable/alphabet_indexer_overlay</item>
+        <item name="overlayMarginLeft">@dimen/alphabet_indexer_overlay_offset</item>
+        <item name="overlayMarginTop">@dimen/alphabet_indexer_overlay_padding_top</item>
+        <item name="overlayTextColor">@color/alphabet_indexer_overlay_text_color</item>
+        <item name="overlayTextSize">@dimen/alphabet_indexer_overlay_text_size</item>
+    </style>
+    <style name="TextViewFloatPanelButton">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textSize">@dimen/v5_text_font_size_textview_float_panel_button</item>
+        <item name="android:textColor">@color/textview_floatpanel_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/textview_floatpanel_button_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">60.0dip</item>
+        <item name="android:minHeight">38.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ccffffff</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.2</item>
+    </style>
+    <style name="V5" />
+    <style name="V5.AlertDialog" parent="@style/V5">
+        <item name="android:fullDark">@*android:color/transparent</item>
+        <item name="android:topDark">@*android:color/transparent</item>
+        <item name="android:centerDark">@*android:color/transparent</item>
+        <item name="android:bottomDark">@*android:color/transparent</item>
+        <item name="android:fullBright">@*android:color/transparent</item>
+        <item name="android:topBright">@*android:color/transparent</item>
+        <item name="android:centerBright">@*android:color/transparent</item>
+        <item name="android:bottomBright">@*android:color/transparent</item>
+        <item name="android:bottomMedium">@*android:color/transparent</item>
+        <item name="android:centerMedium">@*android:color/transparent</item>
+        <item name="android:layout">@layout/v5_alert_dialog</item>
+        <item name="android:listLayout">@layout/v5_select_dialog</item>
+        <item name="android:multiChoiceItemLayout">@layout/v5_select_dialog_multichoice</item>
+        <item name="android:singleChoiceItemLayout">@layout/v5_select_dialog_singlechoice</item>
+        <item name="android:listItemLayout">@layout/v5_select_dialog_item</item>
+    </style>
+    <style name="V5.AlertDialog.GlobalAction" parent="@style/V5.AlertDialog">
+        <item name="android:layout">@layout/v5_global_action</item>
+    </style>
+    <style name="V5.Animation" parent="@style/V5" />
+    <style name="V5.Animation.Dialog" parent="@style/V5.Animation">
+        <item name="android:windowEnterAnimation">@anim/v5_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/v5_dialog_exit</item>
+    </style>
+    <style name="V5.Animation.Menu" parent="@style/V5.Animation">
+        <item name="android:windowEnterAnimation">@anim/v5_menu_enter</item>
+        <item name="android:windowExitAnimation">@anim/v5_menu_exit</item>
+    </style>
+    <style name="V5.Animation.VolumePanel" parent="@style/V5.Animation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@*android:anim/fade_out</item>
+    </style>
+    <style name="V5.Animation.ZoomButtons" parent="@style/V5.Animation">
+        <item name="android:windowEnterAnimation">@*android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@*android:anim/fade_out</item>
+    </style>
+    <style name="V5.Preference" parent="@style/V5">
+        <item name="android:layout">@layout/v5_preference</item>
+    </style>
+    <style name="V5.Preference.Category" parent="@style/V5.Preference">
+        <item name="android:layout">@layout/v5_preference_category</item>
+        <item name="android:selectable">false</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="V5.Preference.CheckBoxPreference" parent="@style/V5.Preference">
+        <item name="android:widgetLayout">@layout/v5_preference_widget_checkbox</item>
+    </style>
+    <style name="V5.Preference.DialogPreference" parent="@style/V5.Preference">
+        <item name="android:positiveButtonText">@*android:string/ok</item>
+        <item name="android:negativeButtonText">@*android:string/cancel</item>
+    </style>
+    <style name="V5.Preference.DialogPreference.EditTextPreference" parent="@style/V5.Preference.DialogPreference">
+        <item name="android:dialogLayout">@layout/v5_preference_dialog_edittext</item>
+    </style>
+    <style name="V5.Preference.DialogPreference.YesNoPreference" parent="@style/V5.Preference.DialogPreference">
+        <item name="android:positiveButtonText">@*android:string/yes</item>
+        <item name="android:negativeButtonText">@*android:string/no</item>
+    </style>
+    <style name="V5.Preference.Information" parent="@style/V5.Preference">
+        <item name="android:enabled">false</item>
+        <item name="android:layout">@layout/v5_preference_information</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="V5.Preference.PreferenceScreen" parent="@style/V5.Preference" />
+    <style name="V5.Preference.RingtonePreference" parent="@style/V5.Preference">
+        <item name="android:layout">@layout/v5_preference_ringtone</item>
+        <item name="android:ringtoneType">ringtone</item>
+        <item name="android:showDefault">true</item>
+        <item name="android:showSilent">true</item>
+    </style>
+    <style name="V5.Preference.SwitchPreference" parent="@style/V5.Preference">
+        <item name="android:widgetLayout">@layout/android_preference_widget_switch</item>
+        <item name="android:switchTextOn">@string/android_capital_on</item>
+        <item name="android:switchTextOff">@string/android_capital_off</item>
+    </style>
+    <style name="V5.TextAppearance" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_primary</item>
+    </style>
+    <style name="V5.TextAppearance.BottomBarIcon" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_memo</item>
+        <item name="android:textColor">?v5_bottom_bar_icon_text_color</item>
+    </style>
+    <style name="V5.TextAppearance.BottomBarIcon.EditMode" parent="@style/V5.TextAppearance.BottomBarIcon">
+        <item name="android:textColor">?v5_edit_mode_bottom_bar_icon_text_color</item>
+        <item name="android:shadowDy">0.0</item>
+    </style>
+    <style name="V5.TextAppearance.Button" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_button</item>
+        <item name="android:textColor">?v5_button_text_color</item>
+    </style>
+    <style name="V5.TextAppearance.Button.Warn" parent="@style/V5.TextAppearance.Button">
+        <item name="android:textColor">@color/v5_button_text_dark</item>
+    </style>
+    <style name="V5.TextAppearance.DialogTitle" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_list_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/v5_dialog_title_text_color_light</item>
+    </style>
+    <style name="V5.TextAppearance.EditMode" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?v5_edit_mode_text_color</item>
+    </style>
+    <style name="V5.TextAppearance.EditMode.Button" parent="@style/V5.TextAppearance.EditMode">
+        <item name="android:textSize">@dimen/v5_text_font_size_edit_mode_button</item>
+        <item name="android:textColor">?v5_edit_mode_btn_text_color</item>
+    </style>
+    <style name="V5.TextAppearance.EditText" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_textedit</item>
+        <item name="android:textColor">?android:editTextColor</item>
+    </style>
+    <style name="V5.TextAppearance.ExpandableListView.GroupItem" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_list_primary</item>
+        <item name="android:textColor">?v5_bottom_bar_icon_text_color</item>
+    </style>
+    <style name="V5.TextAppearance.Inverse" parent="@*android:style/TextAppearance.Inverse">
+        <item name="android:textSize">@dimen/v5_text_font_size_primary</item>
+    </style>
+    <style name="V5.TextAppearance.Label" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_preference_category</item>
+        <item name="android:textColor">?v5_text_color_disable</item>
+    </style>
+    <style name="V5.TextAppearance.Large" parent="@*android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/v5_text_font_size_large</item>
+    </style>
+    <style name="V5.TextAppearance.Large.Inverse" parent="@*android:style/TextAppearance.Large.Inverse">
+        <item name="android:textSize">@dimen/v5_text_font_size_large</item>
+    </style>
+    <style name="V5.TextAppearance.List" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_list_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?v5_list_text_color</item>
+    </style>
+    <style name="V5.TextAppearance.List.Primary" parent="@style/V5.TextAppearance.List" />
+    <style name="V5.TextAppearance.List.Secondary" parent="@style/V5.TextAppearance.List">
+        <item name="android:textSize">@dimen/v5_text_font_size_list_secondary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?v5_list_secondary_text_color</item>
+        <item name="android:shadowColor">?v5_list_secondary_text_shadow</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="V5.TextAppearance.Medium" parent="@*android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/v5_text_font_size_medium</item>
+    </style>
+    <style name="V5.TextAppearance.Medium.Inverse" parent="@*android:style/TextAppearance.Medium.Inverse">
+        <item name="android:textSize">@dimen/v5_text_font_size_medium</item>
+    </style>
+    <style name="V5.TextAppearance.MenuList" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_list_primary</item>
+        <item name="android:textColor">?v5_checkable_list_item_text_color</item>
+    </style>
+    <style name="V5.TextAppearance.PreferenceCategory" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_preference_category</item>
+        <item name="android:textColor">@color/v5_preference_category_text_color_light</item>
+    </style>
+    <style name="V5.TextAppearance.PreferenceList" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?v5_preference_primary_text_color</item>
+    </style>
+    <style name="V5.TextAppearance.ProgressDialogMessage" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/v5_progress_dialog_message_text_color_light</item>
+    </style>
+    <style name="V5.TextAppearance.ReloadingBar" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_title_bar_secondary_medium</item>
+        <item name="android:textColor">?v5_reloading_bar_text_color</item>
+    </style>
+    <style name="V5.TextAppearance.SecondaryTabIndicator" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_button</item>
+        <item name="android:textColor">?v5_secondary_tab_indicator_text_color</item>
+    </style>
+    <style name="V5.TextAppearance.Small" parent="@*android:style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/v5_text_font_size_small</item>
+    </style>
+    <style name="V5.TextAppearance.Small.Inverse" parent="@*android:style/TextAppearance.Small.Inverse">
+        <item name="android:textSize">@dimen/v5_text_font_size_small</item>
+    </style>
+    <style name="V5.TextAppearance.TabIndicator" parent="@style/V5.TextAppearance.Title">
+        <item name="android:textSize">@dimen/v5_text_font_size_tab</item>
+        <item name="android:textColor">?v5_tab_text_color</item>
+    </style>
+    <style name="V5.TextAppearance.Title" parent="@style/V5.TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?v5_title_text_color</item>
+        <item name="android:shadowColor">?v5_title_text_shadow</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">5.0</item>
+        <item name="android:shadowRadius">10.0</item>
+    </style>
+    <style name="V5.TextAppearance.Title.Large" parent="@style/V5.TextAppearance.Title">
+        <item name="android:textSize">@dimen/v5_text_font_size_main_page_title</item>
+    </style>
+    <style name="V5.TextAppearance.Title.Large.Secondary" parent="@style/V5.TextAppearance.Title">
+        <item name="android:textSize">@dimen/v5_text_font_size_small</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="V5.TextAppearance.Title.Medium" parent="@style/V5.TextAppearance.Title">
+        <item name="android:textSize">@dimen/v5_text_font_size_title_bar_medium</item>
+    </style>
+    <style name="V5.TextAppearance.Title.Medium.Secondary" parent="@style/V5.TextAppearance.Title">
+        <item name="android:textSize">@dimen/v5_text_font_size_title_bar_secondary_medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="V5.Theme" parent="@*android:style/Theme.Holo.Light">
+        <item name="android:textAppearance">@style/V5.TextAppearance</item>
+        <item name="android:textAppearanceInverse">@style/V5.TextAppearance.Inverse</item>
+        <item name="android:textColorPrimary">?v5_primary_text_color</item>
+        <item name="android:textColorPrimaryDisableOnly">?v5_text_color_disable</item>
+        <item name="android:textColorSecondary">?v5_secondary_text_color</item>
+        <item name="android:textColorPrimaryInverse">@color/v5_primary_text_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/v5_secondary_text_dark</item>
+        <item name="android:textColorPrimaryNoDisable">?v5_primary_text_color</item>
+        <item name="android:textColorSecondaryNoDisable">?v5_secondary_text_color</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@color/v5_primary_text_dark</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@color/v5_secondary_text_dark</item>
+        <item name="android:textColorHintInverse">@color/v5_text_color_hint_dark</item>
+        <item name="android:textAppearanceLarge">@style/V5.TextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/V5.TextAppearance.Medium</item>
+        <item name="android:textAppearanceSmall">@style/V5.TextAppearance.Small</item>
+        <item name="android:textAppearanceLargeInverse">@style/V5.TextAppearance.Large.Inverse</item>
+        <item name="android:textAppearanceMediumInverse">@style/V5.TextAppearance.Medium.Inverse</item>
+        <item name="android:textAppearanceSmallInverse">@style/V5.TextAppearance.Small.Inverse</item>
+        <item name="android:buttonStyle">@style/V5.Widget.Button</item>
+        <item name="android:expandableListPreferredItemPaddingLeft">40.0dip</item>
+        <item name="android:expandableListPreferredChildPaddingLeft">?android:expandableListPreferredItemPaddingLeft</item>
+        <item name="android:expandableListPreferredItemIndicatorLeft">3.0dip</item>
+        <item name="android:expandableListPreferredItemIndicatorRight">0.0dip</item>
+        <item name="android:expandableListPreferredChildIndicatorLeft">?android:expandableListPreferredItemIndicatorLeft</item>
+        <item name="android:expandableListPreferredChildIndicatorRight">?android:expandableListPreferredItemIndicatorRight</item>
+        <item name="android:windowBackground">@drawable/v5_window_bg_light</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:alertDialogStyle">@style/V5.AlertDialog</item>
+        <item name="android:panelFullBackground">@drawable/v5_menu_full_bg_light</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/v5_scrollbar_handle_horizontal_light</item>
+        <item name="android:scrollbarThumbVertical">@drawable/v5_scrollbar_handle_vertical_light</item>
+        <item name="android:checkboxStyle">@style/V5.Widget.CompoundButton.CheckBox</item>
+        <item name="android:dropDownListViewStyle">@style/V5.Widget.ListView.DropDown</item>
+        <item name="android:editTextStyle">@style/V5.Widget.EditText</item>
+        <item name="android:expandableListViewStyle">@style/V5.Widget.ExpandableListView</item>
+        <item name="android:listViewStyle">@style/V5.Widget.ListView</item>
+        <item name="android:progressBarStyle">@style/V5.Widget.ProgressBar</item>
+        <item name="android:progressBarStyleHorizontal">@style/V5.Widget.ProgressBar.Horizontal</item>
+        <item name="android:progressBarStyleSmall">@style/V5.Widget.ProgressBar.Small</item>
+        <item name="android:progressBarStyleLarge">@style/V5.Widget.ProgressBar.Large</item>
+        <item name="android:seekBarStyle">@style/V5.Widget.SeekBar</item>
+        <item name="android:ratingBarStyle">@style/V5.Widget.RatingBar</item>
+        <item name="android:ratingBarStyleSmall">@style/V5.Widget.RatingBar.Small</item>
+        <item name="android:radioButtonStyle">@style/V5.Widget.CompoundButton.RadioButton</item>
+        <item name="android:spinnerStyle">@style/V5.Widget.Spinner</item>
+        <item name="android:textViewStyle">@style/V5.Widget.TextView</item>
+        <item name="android:dropDownItemStyle">@style/V5.Widget.DropDownItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/V5.Widget.DropDownItem.Spinner</item>
+        <item name="android:spinnerItemStyle">@style/V5.Widget.TextView.SpinnerItem</item>
+        <item name="android:preferenceScreenStyle">@style/V5.Preference.PreferenceScreen</item>
+        <item name="android:preferenceCategoryStyle">@style/V5.Preference.Category</item>
+        <item name="android:preferenceInformationStyle">@style/V5.Preference.Information</item>
+        <item name="android:preferenceStyle">@style/V5.Preference</item>
+        <item name="android:checkBoxPreferenceStyle">@style/V5.Preference.CheckBoxPreference</item>
+        <item name="android:yesNoPreferenceStyle">@style/V5.Preference.DialogPreference.YesNoPreference</item>
+        <item name="android:dialogPreferenceStyle">@style/V5.Preference.DialogPreference</item>
+        <item name="android:editTextPreferenceStyle">@style/V5.Preference.DialogPreference.EditTextPreference</item>
+        <item name="android:ringtonePreferenceStyle">@style/V5.Preference.RingtonePreference</item>
+        <item name="android:preferenceLayoutChild">@layout/v5_preference_child</item>
+        <item name="android:textColorHint">?v5_text_color_hint</item>
+        <item name="android:listSeparatorTextViewStyle">@style/V5.Widget.TextView.ListSeparator</item>
+        <item name="android:progressBarStyleSmallTitle">@style/V5.Widget.ProgressBar.Small</item>
+        <item name="android:ratingBarStyleIndicator">@style/V5.Widget.RatingBar.Indicator</item>
+        <item name="android:textColorTertiary">?v5_tertiary_text_color</item>
+        <item name="android:textColorTertiaryInverse">@color/v5_tertiary_text_dark</item>
+        <item name="android:listDivider">@null</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/v5_btn_radio_light</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/v5_btn_checkbox_light</item>
+        <item name="android:progressBarStyleInverse">@style/V5.Widget.ProgressBar</item>
+        <item name="android:progressBarStyleSmallInverse">@style/V5.Widget.ProgressBar.Small</item>
+        <item name="android:progressBarStyleLargeInverse">@style/V5.Widget.ProgressBar.Large</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/v5_text_color_disable_dark</item>
+        <item name="android:expandableListViewWhiteStyle">@style/V5.Widget.ExpandableListView.White</item>
+        <item name="android:actionBarStyle">@style/V5.Widget.ActionBar</item>
+        <item name="android:dropDownSpinnerStyle">@style/V5.Widget.Spinner.DropDown</item>
+        <item name="android:actionBarSize">@dimen/v5_action_bar_height</item>
+        <item name="android:actionBarTabStyle">@style/V5.Widget.ActionBar.TabView</item>
+        <item name="android:actionBarTabBarStyle">@style/V5.Widget.ActionBar.TabBar</item>
+        <item name="android:actionBarTabTextStyle">@style/V5.Widget.ActionBar.TabText</item>
+        <item name="android:listPopupWindowStyle">@style/V5.Widget.ListPopupWindow</item>
+        <item name="android:popupMenuStyle">@style/V5.Widget.PopupMenu</item>
+        <item name="android:listDividerAlertDialog">@null</item>
+        <item name="android:textColorAlertDialogListItem">?v5_menu_preference_list_color</item>
+        <item name="android:dialogTheme">@style/V5.Theme.Light.Dialog</item>
+        <item name="android:alertDialogTheme">@style/V5.Theme.Light.Dialog.Alert</item>
+        <item name="android:homeAsUpIndicator">@drawable/v5_title_bar_back_button_light</item>
+        <item name="android:buttonBarStyle">@style/V5.Widget.ButtonBar</item>
+        <item name="android:buttonBarButtonStyle">@style/V5.Widget.Button.Dialog</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/v5_fastscroll_thumb_light</item>
+        <item name="android:fastScrollTrackDrawable">@drawable/v5_fastscroll_track_light</item>
+        <item name="android:editTextColor">@color/v5_edit_text_color_light</item>
+        <item name="android:alertDialogIcon">@null</item>
+        <item name="android:datePickerStyle">@style/V5.Widget.DatePicker</item>
+        <item name="android:switchPreferenceStyle">@style/V5.Preference.SwitchPreference</item>
+        <item name="android:actionBarSplitStyle">@style/V5.Widget.ActionBar.Split</item>
+        <item name="android:actionModeStyle">@style/V5.Widget.ActionMode</item>
+        <item name="android:actionBarItemBackground">@null</item>
+        <item name="android:panelMenuListTheme">@style/V5.Theme.Light.CompactMenu</item>
+        <item name="android:timePickerStyle">@style/V5.Widget.TimePicker</item>
+        <item name="android:searchDialogTheme">@style/V5.Theme.Light.SearchBar</item>
+        <item name="miui_ui_version">5</item>
+        <item name="slidingButtonStyleDefault">@style/V5.Widget.SlidingButton</item>
+        <item name="v5_action_bar_title_layout">@layout/v5_action_bar_title_item</item>
+        <item name="v5_action_mode_title_layout">@layout/v5_action_mode_title_item</item>
+        <item name="v5_bottom_bar_bg">@drawable/v5_bottom_bar_bg_light</item>
+        <item name="v5_bottom_bar_delete_icon">@drawable/v5_bottom_bar_delete_icon_light</item>
+        <item name="v5_bottom_bar_discard_icon">@drawable/v5_bottom_bar_discard_icon_light</item>
+        <item name="v5_bottom_bar_edit_icon">@drawable/v5_bottom_bar_edit_icon_light</item>
+        <item name="v5_bottom_bar_favorite_icon">@drawable/v5_bottom_bar_favorite_icon_light</item>
+        <item name="v5_bottom_bar_icon_bg">@drawable/v5_bottom_bar_icon_bg_light</item>
+        <item name="v5_bottom_bar_icon_text_color">@color/v5_bottom_bar_icon_text_light</item>
+        <item name="v5_bottom_bar_icon_text_shadow">@color/v5_bottom_bar_icon_text_shadow_light</item>
+        <item name="v5_bottom_bar_list_text_color">@color/v5_bottom_bar_list_text_light</item>
+        <item name="v5_bottom_bar_more_icon">@drawable/v5_bottom_bar_more_icon_light</item>
+        <item name="v5_bottom_bar_new_icon">@drawable/v5_bottom_bar_new_icon_light</item>
+        <item name="v5_bottom_bar_save_icon">@drawable/v5_bottom_bar_save_icon_light</item>
+        <item name="v5_bottom_bar_top_line">@drawable/v5_bottom_bar_top_line_light</item>
+        <item name="v5_bottom_bar_unfavorite_icon">@drawable/v5_bottom_bar_unfavorite_icon_light</item>
+        <item name="v5_bottom_placeholder">@drawable/v5_bottom_bar_placeholder</item>
+        <item name="v5_btn_bg">@drawable/v5_btn_bg_light</item>
+        <item name="v5_btn_bg_negative_warn">@drawable/v5_btn_bg_negative_warn_light</item>
+        <item name="v5_btn_bg_positive_warn">@drawable/v5_btn_bg_positive_warn_light</item>
+        <item name="v5_btn_bg_rect">@drawable/v5_btn_bg_rect_light</item>
+        <item name="v5_button_text_color">@color/v5_button_text_light</item>
+        <item name="v5_checkable_btn_text_color">@color/v5_checkable_btn_text_light</item>
+        <item name="v5_checkable_btn_text_color_stable">@color/v5_checkable_btn_text_color_stable_light</item>
+        <item name="v5_checkable_list_item_text_color">@color/v5_checkable_list_item_text_color_light</item>
+        <item name="v5_edit_mode_bottom_bar_bg">@drawable/v5_edit_mode_bottom_bar_bg_light</item>
+        <item name="v5_edit_mode_bottom_bar_delete_icon">@drawable/v5_bottom_bar_delete_icon_dark</item>
+        <item name="v5_edit_mode_bottom_bar_favorite_icon">@drawable/v5_bottom_bar_favorite_icon_dark</item>
+        <item name="v5_edit_mode_bottom_bar_icon_bg">@drawable/v5_edit_mode_bottom_bar_icon_bg_light</item>
+        <item name="v5_edit_mode_bottom_bar_icon_text_color">@color/v5_edit_mode_bottom_bar_icon_text_light</item>
+        <item name="v5_edit_mode_bottom_bar_list_bg">@drawable/v5_edit_mode_bottom_bar_list_bg_light</item>
+        <item name="v5_edit_mode_bottom_bar_list_item_bg">@drawable/v5_edit_mode_bottom_bar_list_item_bg_light</item>
+        <item name="v5_edit_mode_bottom_bar_more_icon">@drawable/v5_bottom_bar_more_icon_dark</item>
+        <item name="v5_edit_mode_bottom_bar_more_icon_bg">@drawable/v5_edit_mode_bottom_bar_more_icon_bg_light</item>
+        <item name="v5_edit_mode_btn_default_text_color">@color/v5_edit_mode_btn_default_text_color_light</item>
+        <item name="v5_edit_mode_btn_text_color">@color/v5_edit_mode_btn_text_color_light</item>
+        <item name="v5_edit_mode_text_color">@color/v5_edit_mode_text_color_light</item>
+        <item name="v5_edit_mode_top_bar_bg">@drawable/v5_edit_mode_top_bar_bg_light</item>
+        <item name="v5_edit_mode_top_bar_button">@drawable/v5_edit_mode_top_bar_button_light</item>
+        <item name="v5_edit_mode_top_bar_button_main">@drawable/v5_edit_mode_top_bar_button_main_light</item>
+        <item name="v5_edit_mode_top_bar_no_shadow_bg">@drawable/v5_edit_mode_top_bar_no_shadow_bg_light</item>
+        <item name="v5_edit_text_bg">@drawable/v5_edit_text_bg_light</item>
+        <item name="v5_edit_text_search_bg">@drawable/v5_edit_text_search_bg_light</item>
+        <item name="v5_edit_text_search_clear_btn">@drawable/v5_edit_text_search_clear_btn_light</item>
+        <item name="v5_expanded_menu_layout">@layout/v5_expanded_menu_layout</item>
+        <item name="v5_expander_group_bg">@drawable/v5_expander_group_bg_light</item>
+        <item name="v5_expander_group_indicator">@drawable/v5_expander_group_indicator_light</item>
+        <item name="v5_group_item_bg">@drawable/v5_group_item_bg_light</item>
+        <item name="v5_list_popup_window_bg">@drawable/v5_list_popup_window_bg_light</item>
+        <item name="v5_list_secondary_text_color">@color/v5_list_secondary_text_light</item>
+        <item name="v5_list_secondary_text_shadow">@color/v5_list_secondary_text_shadow_light</item>
+        <item name="v5_list_text_color">@color/v5_list_text_light</item>
+        <item name="v5_list_view_item_bg">@drawable/v5_list_view_item_bg_light</item>
+        <item name="v5_menu_list_view_bg">@drawable/v5_menu_list_view_bg_light</item>
+        <item name="v5_menu_list_view_item_bg">@drawable/v5_menu_list_view_item_bg_light</item>
+        <item name="v5_menu_preference_list_color">@color/v5_menu_preference_list_text_light</item>
+        <item name="v5_menu_primary_mask_bg">@drawable/v5_menu_primary_mask_bg_light</item>
+        <item name="v5_over_fling_distance">@dimen/v5_over_fling_distance_dimen</item>
+        <item name="v5_over_scroll_distance">@dimen/v5_over_scroll_distance_dimen</item>
+        <item name="v5_over_scroll_edge">@*android:color/transparent</item>
+        <item name="v5_over_scroll_glow">@*android:color/transparent</item>
+        <item name="v5_popup_menu_item_layout">@layout/v5_popup_menu_item_layout</item>
+        <item name="v5_primary_text_color">@color/v5_primary_text_light</item>
+        <item name="v5_progress_bar">@drawable/v5_progress_bar_light</item>
+        <item name="v5_progress_bar_ani">@drawable/v5_progress_bar_ani_light</item>
+        <item name="v5_progress_bar_ani_large">@drawable/v5_progress_bar_ani_large_light</item>
+        <item name="v5_progress_bar_ani_small">@drawable/v5_progress_bar_ani_small_light</item>
+        <item name="v5_progress_bar_bg">@drawable/v5_progress_bar_bg_light</item>
+        <item name="v5_progress_bar_bg_large">@drawable/v5_progress_bar_bg_large_light</item>
+        <item name="v5_progress_bar_bg_small">@drawable/v5_progress_bar_bg_small_light</item>
+        <item name="v5_reloading_bar_bg">@drawable/v5_reloading_bar_bg_light</item>
+        <item name="v5_reloading_bar_text_color">@color/v5_reloading_bar_text_color_light</item>
+        <item name="v5_secondary_tab_bg">@drawable/v5_secondary_tab_bg_light</item>
+        <item name="v5_secondary_tab_indicator_bg">@drawable/v5_secondary_tab_indicator_bg_light</item>
+        <item name="v5_secondary_tab_indicator_style">@style/V5.Widget.SecondaryTabIndicator</item>
+        <item name="v5_secondary_tab_indicator_text_color">@color/v5_secondary_tab_indicator_text_light</item>
+        <item name="v5_secondary_tab_indicator_text_shadow">@color/v5_secondary_tab_indicator_text_shadow_light</item>
+        <item name="v5_secondary_tab_style">@style/V5.Widget.SecondaryTab</item>
+        <item name="v5_secondary_text_color">@color/v5_secondary_text_light</item>
+        <item name="v5_spinner_bg">@drawable/v5_spinner_bg_light</item>
+        <item name="v5_tab_bg">@drawable/v5_tab_bg_light</item>
+        <item name="v5_tab_indicator_arrow">@drawable/v5_tab_indicator_arrow_light</item>
+        <item name="v5_tab_indicator_arrow_style">@style/V5.Widget.TabIndicatorArrow</item>
+        <item name="v5_tab_indicator_bg">@drawable/v5_tab_indicator_bg_light</item>
+        <item name="v5_tab_indicator_bg_no_title">@drawable/v5_tab_indicator_bg_no_title_light</item>
+        <item name="v5_tab_indicator_placeholder">@drawable/v5_tab_indicator_placeholder</item>
+        <item name="v5_tab_indicator_shadow">@drawable/v5_tab_indicator_shadow_light</item>
+        <item name="v5_tab_indicator_style">@style/V5.Widget.TabIndicator</item>
+        <item name="v5_tab_style">@style/V5.Widget.Tab</item>
+        <item name="v5_tab_text_color">@color/v5_tab_text_light</item>
+        <item name="v5_tertiary_text_color">@color/v5_tertiary_text_light</item>
+        <item name="v5_text_color_disable">@color/v5_text_color_disable_light</item>
+        <item name="v5_text_color_hilighted">@color/v5_text_color_hilighted_light</item>
+        <item name="v5_text_color_hint">@color/v5_text_color_hint_light</item>
+        <item name="v5_text_color_pressed">@color/v5_text_color_pressed_light</item>
+        <item name="v5_title_bar_back_button">@drawable/v5_title_bar_back_button_light</item>
+        <item name="v5_title_bar_back_button_large">@drawable/v5_title_bar_back_button_large_light</item>
+        <item name="v5_title_bar_back_button_medium">@drawable/v5_title_bar_back_button_medium_light</item>
+        <item name="v5_title_bar_back_button_search_mode">@drawable/v5_title_bar_back_button_search_mode_light</item>
+        <item name="v5_title_bar_bg">@drawable/v5_title_bar_bg_light</item>
+        <item name="v5_title_bar_bg_search_mode">@drawable/v5_title_bar_bg_search_mode_light</item>
+        <item name="v5_title_bar_large_bg">@null</item>
+        <item name="v5_title_bar_medium_bg">@null</item>
+        <item name="v5_title_text_color">@color/v5_title_text_light</item>
+        <item name="v5_title_text_shadow">@color/v5_title_text_shadow_light</item>
+        <item name="v5_top_placeholder">@drawable/v5_tab_indicator_placeholder</item>
+        <item name="v5_top_placeholder_enabled">true</item>
+        <item name="seekBarForMultipositionBarStyle">@style/V5.Widget.SeekBar.ForMultiPositionBar</item>
+        <item name="searchViewSearchIcon">@*android:color/transparent</item>
+        <item name="searchViewTextField">@drawable/v5_edit_text_search_bg_light</item>
+        <item name="searchViewCloseIcon">@drawable/v5_edit_text_search_clear_btn_light</item>
+        <item name="searchViewTextFieldRight">@*android:color/transparent</item>
+        <item name="searchViewGoIcon">@drawable/v5_search_view_go_icon_light</item>
+        <item name="searchViewVoiceIcon">@drawable/v5_search_view_voice_icon_light</item>
+        <item name="v5_list_view_section_item_bg">@drawable/v5_list_view_section_item_bg_light</item>
+        <item name="v5_content_empty_icon">@drawable/v5_content_empty_icon_light</item>
+        <item name="v5_preference_primary_text_color">@color/v5_preference_primary_text_light</item>
+        <item name="v5_preference_secondary_text_color">@color/v5_preference_secondary_text_light</item>
+    </style>
+    <style name="V5.Theme.Dark" parent="@*android:style/Theme.Holo">
+        <item name="android:textAppearance">@style/V5.TextAppearance</item>
+        <item name="android:textAppearanceInverse">@style/V5.TextAppearance.Inverse</item>
+        <item name="android:textColorPrimary">?v5_primary_text_color</item>
+        <item name="android:textColorPrimaryDisableOnly">?v5_text_color_disable</item>
+        <item name="android:textColorSecondary">?v5_secondary_text_color</item>
+        <item name="android:textColorPrimaryInverse">@color/v5_primary_text_light</item>
+        <item name="android:textColorSecondaryInverse">@color/v5_secondary_text_light</item>
+        <item name="android:textColorPrimaryNoDisable">?v5_primary_text_color</item>
+        <item name="android:textColorSecondaryNoDisable">?v5_secondary_text_color</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@color/v5_primary_text_light</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@color/v5_secondary_text_light</item>
+        <item name="android:textColorHintInverse">@color/v5_text_color_hint_light</item>
+        <item name="android:textAppearanceLarge">@style/V5.TextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/V5.TextAppearance.Medium</item>
+        <item name="android:textAppearanceSmall">@style/V5.TextAppearance.Small</item>
+        <item name="android:textAppearanceLargeInverse">@style/V5.TextAppearance.Large.Inverse</item>
+        <item name="android:textAppearanceMediumInverse">@style/V5.TextAppearance.Medium.Inverse</item>
+        <item name="android:textAppearanceSmallInverse">@style/V5.TextAppearance.Small.Inverse</item>
+        <item name="android:buttonStyle">@style/V5.Widget.Button</item>
+        <item name="android:expandableListPreferredItemPaddingLeft">40.0dip</item>
+        <item name="android:expandableListPreferredChildPaddingLeft">?android:expandableListPreferredItemPaddingLeft</item>
+        <item name="android:expandableListPreferredItemIndicatorLeft">3.0dip</item>
+        <item name="android:expandableListPreferredItemIndicatorRight">0.0dip</item>
+        <item name="android:expandableListPreferredChildIndicatorLeft">?android:expandableListPreferredItemIndicatorLeft</item>
+        <item name="android:expandableListPreferredChildIndicatorRight">?android:expandableListPreferredItemIndicatorRight</item>
+        <item name="android:windowBackground">@drawable/v5_window_bg_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:alertDialogStyle">@style/V5.AlertDialog</item>
+        <item name="android:panelFullBackground">@drawable/v5_menu_full_bg_light</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/v5_scrollbar_handle_horizontal_dark</item>
+        <item name="android:scrollbarThumbVertical">@drawable/v5_scrollbar_handle_vertical_dark</item>
+        <item name="android:checkboxStyle">@style/V5.Widget.CompoundButton.CheckBox</item>
+        <item name="android:dropDownListViewStyle">@style/V5.Widget.ListView.DropDown</item>
+        <item name="android:editTextStyle">@style/V5.Widget.EditText</item>
+        <item name="android:expandableListViewStyle">@style/V5.Widget.ExpandableListView</item>
+        <item name="android:listViewStyle">@style/V5.Widget.ListView</item>
+        <item name="android:progressBarStyle">@style/V5.Widget.ProgressBar</item>
+        <item name="android:progressBarStyleHorizontal">@style/V5.Widget.ProgressBar.Horizontal</item>
+        <item name="android:progressBarStyleSmall">@style/V5.Widget.ProgressBar.Small</item>
+        <item name="android:progressBarStyleLarge">@style/V5.Widget.ProgressBar.Large</item>
+        <item name="android:seekBarStyle">@style/V5.Widget.SeekBar</item>
+        <item name="android:ratingBarStyle">@style/V5.Widget.RatingBar</item>
+        <item name="android:ratingBarStyleSmall">@style/V5.Widget.RatingBar.Small</item>
+        <item name="android:radioButtonStyle">@style/V5.Widget.CompoundButton.RadioButton</item>
+        <item name="android:spinnerStyle">@style/V5.Widget.Spinner</item>
+        <item name="android:textViewStyle">@style/V5.Widget.TextView</item>
+        <item name="android:dropDownItemStyle">@style/V5.Widget.DropDownItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/V5.Widget.DropDownItem.Spinner</item>
+        <item name="android:spinnerItemStyle">@style/V5.Widget.TextView.SpinnerItem</item>
+        <item name="android:preferenceScreenStyle">@style/V5.Preference.PreferenceScreen</item>
+        <item name="android:preferenceCategoryStyle">@style/V5.Preference.Category</item>
+        <item name="android:preferenceInformationStyle">@style/V5.Preference.Information</item>
+        <item name="android:preferenceStyle">@style/V5.Preference</item>
+        <item name="android:checkBoxPreferenceStyle">@style/V5.Preference.CheckBoxPreference</item>
+        <item name="android:yesNoPreferenceStyle">@style/V5.Preference.DialogPreference.YesNoPreference</item>
+        <item name="android:dialogPreferenceStyle">@style/V5.Preference.DialogPreference</item>
+        <item name="android:editTextPreferenceStyle">@style/V5.Preference.DialogPreference.EditTextPreference</item>
+        <item name="android:ringtonePreferenceStyle">@style/V5.Preference.RingtonePreference</item>
+        <item name="android:textColorHint">?v5_text_color_hint</item>
+        <item name="android:listSeparatorTextViewStyle">@style/V5.Widget.TextView.ListSeparator</item>
+        <item name="android:progressBarStyleSmallTitle">@style/V5.Widget.ProgressBar.Small</item>
+        <item name="android:ratingBarStyleIndicator">@style/V5.Widget.RatingBar.Indicator</item>
+        <item name="android:textColorTertiary">?v5_tertiary_text_color</item>
+        <item name="android:textColorTertiaryInverse">@color/v5_tertiary_text_light</item>
+        <item name="android:listDivider">@null</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/v5_btn_radio_light</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/v5_btn_checkbox_dark</item>
+        <item name="android:progressBarStyleInverse">@style/V5.Widget.ProgressBar</item>
+        <item name="android:progressBarStyleSmallInverse">@style/V5.Widget.ProgressBar.Small</item>
+        <item name="android:progressBarStyleLargeInverse">@style/V5.Widget.ProgressBar.Large</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/v5_text_color_disable_light</item>
+        <item name="android:expandableListViewWhiteStyle">@style/V5.Widget.ExpandableListView.White</item>
+        <item name="android:actionBarStyle">@style/V5.Widget.ActionBar</item>
+        <item name="android:dropDownSpinnerStyle">@style/V5.Widget.Spinner.DropDown</item>
+        <item name="android:actionBarSize">@dimen/v5_action_bar_height</item>
+        <item name="android:actionBarTabStyle">@style/V5.Widget.ActionBar.TabView</item>
+        <item name="android:actionBarTabBarStyle">@style/V5.Widget.ActionBar.TabBar</item>
+        <item name="android:actionBarTabTextStyle">@style/V5.Widget.ActionBar.TabText</item>
+        <item name="android:listPopupWindowStyle">@style/V5.Widget.ListPopupWindow</item>
+        <item name="android:popupMenuStyle">@style/V5.Widget.PopupMenu</item>
+        <item name="android:listDividerAlertDialog">@null</item>
+        <item name="android:textColorAlertDialogListItem">?v5_menu_preference_list_color</item>
+        <item name="android:dialogTheme">@style/V5.Theme.Light.Dialog</item>
+        <item name="android:alertDialogTheme">@style/V5.Theme.Light.Dialog.Alert</item>
+        <item name="android:homeAsUpIndicator">@drawable/v5_title_bar_back_button_light</item>
+        <item name="android:buttonBarStyle">@style/V5.Widget.ButtonBar</item>
+        <item name="android:buttonBarButtonStyle">@style/V5.Widget.Button.Dialog</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/v5_fastscroll_thumb_dark</item>
+        <item name="android:fastScrollTrackDrawable">@drawable/v5_fastscroll_track_dark</item>
+        <item name="android:editTextColor">@color/v5_edit_text_color_dark</item>
+        <item name="android:alertDialogIcon">@null</item>
+        <item name="android:datePickerStyle">@style/V5.Widget.DatePicker</item>
+        <item name="android:switchPreferenceStyle">@style/V5.Preference.SwitchPreference</item>
+        <item name="android:actionBarSplitStyle">@style/V5.Widget.ActionBar.Split</item>
+        <item name="android:actionModeStyle">@style/V5.Widget.ActionMode</item>
+        <item name="android:actionBarItemBackground">@null</item>
+        <item name="android:panelMenuListTheme">@style/V5.Theme.Light.CompactMenu</item>
+        <item name="android:timePickerStyle">@style/V5.Widget.TimePicker</item>
+        <item name="android:searchDialogTheme">@style/V5.Theme.Light.SearchBar</item>
+        <item name="miui_ui_version">5</item>
+        <item name="slidingButtonStyleDefault">@style/V5.Widget.SlidingButton</item>
+        <item name="v5_action_bar_title_layout">@layout/v5_action_bar_title_item</item>
+        <item name="v5_action_mode_title_layout">@layout/v5_action_mode_title_item</item>
+        <item name="v5_bottom_bar_bg">@drawable/v5_bottom_bar_bg_dark</item>
+        <item name="v5_bottom_bar_delete_icon">@drawable/v5_bottom_bar_delete_icon_dark</item>
+        <item name="v5_bottom_bar_discard_icon">@drawable/v5_bottom_bar_discard_icon_light</item>
+        <item name="v5_bottom_bar_edit_icon">@drawable/v5_bottom_bar_edit_icon_dark</item>
+        <item name="v5_bottom_bar_favorite_icon">@drawable/v5_bottom_bar_favorite_icon_dark</item>
+        <item name="v5_bottom_bar_icon_bg">@drawable/v5_bottom_bar_icon_bg_dark</item>
+        <item name="v5_bottom_bar_icon_text_color">@color/v5_bottom_bar_icon_text_dark</item>
+        <item name="v5_bottom_bar_icon_text_shadow">@color/v5_bottom_bar_icon_text_shadow_dark</item>
+        <item name="v5_bottom_bar_list_text_color">@color/v5_bottom_bar_list_text_dark</item>
+        <item name="v5_bottom_bar_more_icon">@drawable/v5_bottom_bar_more_icon_dark</item>
+        <item name="v5_bottom_bar_new_icon">@drawable/v5_bottom_bar_new_icon_dark</item>
+        <item name="v5_bottom_bar_save_icon">@drawable/v5_bottom_bar_save_icon_dark</item>
+        <item name="v5_bottom_bar_top_line">@drawable/v5_bottom_bar_top_line_light</item>
+        <item name="v5_bottom_bar_unfavorite_icon">@drawable/v5_bottom_bar_unfavorite_icon_dark</item>
+        <item name="v5_bottom_placeholder">@drawable/v5_bottom_bar_placeholder</item>
+        <item name="v5_btn_bg">@drawable/v5_btn_bg_light</item>
+        <item name="v5_btn_bg_negative_warn">@drawable/v5_btn_bg_negative_warn_light</item>
+        <item name="v5_btn_bg_positive_warn">@drawable/v5_btn_bg_positive_warn_light</item>
+        <item name="v5_btn_bg_rect">@drawable/v5_btn_bg_rect_light</item>
+        <item name="v5_button_text_color">@color/v5_button_text_dark</item>
+        <item name="v5_checkable_btn_text_color">@color/v5_checkable_btn_text_dark</item>
+        <item name="v5_checkable_btn_text_color_stable">@color/v5_checkable_btn_text_color_stable_dark</item>
+        <item name="v5_checkable_list_item_text_color">@color/v5_checkable_list_item_text_color_dark</item>
+        <item name="v5_edit_mode_bottom_bar_bg">@drawable/v5_edit_mode_bottom_bar_bg_light</item>
+        <item name="v5_edit_mode_bottom_bar_delete_icon">@drawable/v5_bottom_bar_delete_icon_dark</item>
+        <item name="v5_edit_mode_bottom_bar_favorite_icon">@drawable/v5_bottom_bar_favorite_icon_dark</item>
+        <item name="v5_edit_mode_bottom_bar_icon_bg">@drawable/v5_edit_mode_bottom_bar_icon_bg_light</item>
+        <item name="v5_edit_mode_bottom_bar_icon_text_color">@color/v5_edit_mode_bottom_bar_icon_text_dark</item>
+        <item name="v5_edit_mode_bottom_bar_list_bg">@drawable/v5_edit_mode_bottom_bar_list_bg_light</item>
+        <item name="v5_edit_mode_bottom_bar_list_item_bg">@drawable/v5_edit_mode_bottom_bar_list_item_bg_light</item>
+        <item name="v5_edit_mode_bottom_bar_more_icon">@drawable/v5_bottom_bar_more_icon_dark</item>
+        <item name="v5_edit_mode_bottom_bar_more_icon_bg">@drawable/v5_edit_mode_bottom_bar_more_icon_bg_dark</item>
+        <item name="v5_edit_mode_btn_default_text_color">@color/v5_edit_mode_btn_default_text_color_light</item>
+        <item name="v5_edit_mode_btn_text_color">@color/v5_edit_mode_btn_text_color_light</item>
+        <item name="v5_edit_mode_text_color">@color/v5_edit_mode_text_color_light</item>
+        <item name="v5_edit_mode_top_bar_bg">@drawable/v5_edit_mode_top_bar_bg_light</item>
+        <item name="v5_edit_mode_top_bar_button">@drawable/v5_edit_mode_top_bar_button_light</item>
+        <item name="v5_edit_mode_top_bar_button_main">@drawable/v5_edit_mode_top_bar_button_main_light</item>
+        <item name="v5_edit_mode_top_bar_no_shadow_bg">@drawable/v5_edit_mode_top_bar_no_shadow_bg_light</item>
+        <item name="v5_edit_text_bg">@drawable/v5_edit_text_bg_light</item>
+        <item name="v5_edit_text_search_bg">@drawable/v5_edit_text_search_bg_light</item>
+        <item name="v5_edit_text_search_clear_btn">@drawable/v5_edit_text_search_clear_btn_light</item>
+        <item name="v5_expanded_menu_layout">@layout/v5_expanded_menu_layout</item>
+        <item name="v5_expander_group_bg">@drawable/v5_expander_group_bg_light</item>
+        <item name="v5_expander_group_indicator">@drawable/v5_expander_group_indicator_light</item>
+        <item name="v5_group_item_bg">@drawable/v5_group_item_bg_light</item>
+        <item name="v5_list_popup_window_bg">@drawable/v5_list_popup_window_bg_light</item>
+        <item name="v5_list_secondary_text_color">@color/v5_list_secondary_text_dark</item>
+        <item name="v5_list_secondary_text_shadow">@color/v5_list_secondary_text_shadow_dark</item>
+        <item name="v5_list_text_color">@color/v5_list_text_dark</item>
+        <item name="v5_list_view_item_bg">@drawable/v5_list_view_item_bg_dark</item>
+        <item name="v5_menu_list_view_bg">@drawable/v5_menu_list_view_bg_light</item>
+        <item name="v5_menu_list_view_item_bg">@drawable/v5_menu_list_view_item_bg_light</item>
+        <item name="v5_menu_preference_list_color">@color/v5_menu_preference_list_text_dark</item>
+        <item name="v5_menu_primary_mask_bg">@drawable/v5_menu_primary_mask_bg_light</item>
+        <item name="v5_over_fling_distance">@dimen/v5_over_fling_distance_dimen</item>
+        <item name="v5_over_scroll_distance">@dimen/v5_over_scroll_distance_dimen</item>
+        <item name="v5_over_scroll_edge">@*android:color/transparent</item>
+        <item name="v5_over_scroll_glow">@*android:color/transparent</item>
+        <item name="v5_popup_menu_item_layout">@layout/v5_popup_menu_item_layout</item>
+        <item name="v5_primary_text_color">@color/v5_primary_text_dark</item>
+        <item name="v5_progress_bar">@drawable/v5_progress_bar_light</item>
+        <item name="v5_progress_bar_ani">@drawable/v5_progress_bar_ani_light</item>
+        <item name="v5_progress_bar_ani_large">@drawable/v5_progress_bar_ani_large_light</item>
+        <item name="v5_progress_bar_ani_small">@drawable/v5_progress_bar_ani_small_light</item>
+        <item name="v5_progress_bar_bg">@drawable/v5_progress_bar_bg_light</item>
+        <item name="v5_progress_bar_bg_large">@drawable/v5_progress_bar_bg_large_light</item>
+        <item name="v5_progress_bar_bg_small">@drawable/v5_progress_bar_bg_small_light</item>
+        <item name="v5_reloading_bar_bg">@drawable/v5_reloading_bar_bg_light</item>
+        <item name="v5_reloading_bar_text_color">@color/v5_reloading_bar_text_color_light</item>
+        <item name="v5_secondary_tab_bg">@drawable/v5_secondary_tab_bg_light</item>
+        <item name="v5_secondary_tab_indicator_bg">@drawable/v5_secondary_tab_indicator_bg_light</item>
+        <item name="v5_secondary_tab_indicator_style">@style/V5.Widget.SecondaryTabIndicator</item>
+        <item name="v5_secondary_tab_indicator_text_color">@color/v5_secondary_tab_indicator_text_dark</item>
+        <item name="v5_secondary_tab_indicator_text_shadow">@color/v5_secondary_tab_indicator_text_shadow_dark</item>
+        <item name="v5_secondary_tab_style">@style/V5.Widget.SecondaryTab</item>
+        <item name="v5_secondary_text_color">@color/v5_secondary_text_dark</item>
+        <item name="v5_spinner_bg">@drawable/v5_spinner_bg_light</item>
+        <item name="v5_tab_bg">@drawable/v5_tab_bg_light</item>
+        <item name="v5_tab_indicator_arrow">@drawable/v5_tab_indicator_arrow_light</item>
+        <item name="v5_tab_indicator_arrow_style">@style/V5.Widget.TabIndicatorArrow</item>
+        <item name="v5_tab_indicator_bg">@drawable/v5_tab_indicator_bg_light</item>
+        <item name="v5_tab_indicator_bg_no_title">@drawable/v5_tab_indicator_bg_no_title_light</item>
+        <item name="v5_tab_indicator_placeholder">@drawable/v5_tab_indicator_placeholder</item>
+        <item name="v5_tab_indicator_shadow">@drawable/v5_tab_indicator_shadow_light</item>
+        <item name="v5_tab_indicator_style">@style/V5.Widget.TabIndicator</item>
+        <item name="v5_tab_style">@style/V5.Widget.Tab</item>
+        <item name="v5_tab_text_color">@color/v5_tab_text_dark</item>
+        <item name="v5_tertiary_text_color">@color/v5_tertiary_text_dark</item>
+        <item name="v5_text_color_disable">@color/v5_text_color_disable_dark</item>
+        <item name="v5_text_color_hilighted">@color/v5_text_color_hilighted_dark</item>
+        <item name="v5_text_color_hint">@color/v5_text_color_hint_dark</item>
+        <item name="v5_text_color_pressed">@color/v5_text_color_pressed_dark</item>
+        <item name="v5_title_bar_back_button">@drawable/v5_title_bar_back_button_light</item>
+        <item name="v5_title_bar_back_button_large">@drawable/v5_title_bar_back_button_large_light</item>
+        <item name="v5_title_bar_back_button_medium">@drawable/v5_title_bar_back_button_medium_light</item>
+        <item name="v5_title_bar_back_button_search_mode">@drawable/v5_title_bar_back_button_search_mode_light</item>
+        <item name="v5_title_bar_bg">@drawable/v5_title_bar_bg_dark</item>
+        <item name="v5_title_bar_bg_search_mode">@drawable/v5_title_bar_bg_search_mode_light</item>
+        <item name="v5_title_bar_large_bg">@null</item>
+        <item name="v5_title_bar_medium_bg">@null</item>
+        <item name="v5_title_text_color">@color/v5_title_text_dark</item>
+        <item name="v5_title_text_shadow">@color/v5_title_text_shadow_dark</item>
+        <item name="v5_top_placeholder">@drawable/v5_tab_indicator_placeholder</item>
+        <item name="v5_top_placeholder_enabled">true</item>
+        <item name="seekBarForMultipositionBarStyle">@style/V5.Widget.SeekBar.ForMultiPositionBar</item>
+        <item name="searchViewSearchIcon">@*android:color/transparent</item>
+        <item name="searchViewTextField">@drawable/v5_edit_text_search_bg_light</item>
+        <item name="searchViewCloseIcon">@drawable/v5_edit_text_search_clear_btn_light</item>
+        <item name="searchViewTextFieldRight">@*android:color/transparent</item>
+        <item name="searchViewGoIcon">@drawable/v5_search_view_go_icon_light</item>
+        <item name="searchViewVoiceIcon">@drawable/v5_search_view_voice_icon_light</item>
+        <item name="v5_list_view_section_item_bg">@drawable/v5_list_view_section_item_bg_dark</item>
+        <item name="v5_content_empty_icon">@drawable/v5_content_empty_icon_dark</item>
+        <item name="v5_preference_primary_text_color">@color/v5_preference_primary_text_light</item>
+        <item name="v5_preference_secondary_text_color">@color/v5_preference_secondary_text_light</item>
+    </style>
+    <style name="V5.Theme.Dark.CompactMenu" parent="@style/V5.Theme.Dark" />
+    <style name="V5.Theme.Dark.MainPage" parent="@style/V5.Theme.Dark">
+        <item name="v5_top_placeholder_enabled">false</item>
+    </style>
+    <style name="V5.Theme.Dark.NoTitle" parent="@style/V5.Theme.Dark">
+        <item name="android:windowNoTitle">true</item>
+        <item name="v5_tab_indicator_style">@style/V5.Widget.TabIndicator.NoTitle</item>
+        <item name="v5_top_placeholder_enabled">false</item>
+    </style>
+    <style name="V5.Theme.Light" parent="@style/V5.Theme" />
+    <style name="V5.Theme.Light.ActionBar.NoTitle" parent="@style/V5.Theme.Light">
+        <item name="android:actionBarStyle">@style/V5.Widget.ActionBar.NoTitle</item>
+    </style>
+    <style name="V5.Theme.Light.CompactMenu" parent="@style/V5.Theme.Light" />
+    <style name="V5.Theme.Light.Dialog" parent="@style/V5.Theme.Light">
+        <item name="android:windowBackground">@drawable/v5_dialog_bg_light</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/V5.Widget.DialogTitle</item>
+        <item name="android:windowAnimationStyle">@style/V5.Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:borderlessButtonStyle">@*android:style/Widget.Holo.Light.Button.Borderless.Small</item>
+        <item name="android:buttonBarStyle">@*android:style/Holo.Light.ButtonBar.AlertDialog</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:listPreferredItemPaddingLeft">0.0dip</item>
+        <item name="android:listPreferredItemPaddingRight">0.0dip</item>
+        <item name="android:listPreferredItemPaddingStart">0.0dip</item>
+        <item name="android:listPreferredItemPaddingEnd">0.0dip</item>
+    </style>
+    <style name="V5.Theme.Light.Dialog.Alert" parent="@style/V5.Theme.Light.Dialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@*android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="V5.Theme.Light.Dialog.Alert.GlobalAction" parent="@style/V5.Theme.Light.Dialog.Alert">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:alertDialogStyle">@style/V5.AlertDialog.GlobalAction</item>
+        <item name="android:windowAnimationStyle">@style/V5.Animation.ZoomButtons</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="V5.Theme.Light.Dialog.MinWidth" parent="@style/V5.Theme.Light.Dialog">
+        <item name="android:windowMinWidthMajor">@*android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="V5.Theme.Light.Dialog.NoTitle" parent="@style/V5.Theme.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="v5_tab_indicator_style">@style/V5.Widget.TabIndicator.NoTitle</item>
+        <item name="v5_top_placeholder_enabled">false</item>
+    </style>
+    <style name="V5.Theme.Light.Dialog.NoTitle.MinWidth" parent="@style/V5.Theme.Light.Dialog.NoTitle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowMinWidthMajor">@*android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="V5.Theme.Light.MainPage" parent="@style/V5.Theme">
+        <item name="v5_top_placeholder">@drawable/v5_top_placeholder_mainpage</item>
+        <item name="v5_top_placeholder_enabled">false</item>
+    </style>
+    <style name="V5.Theme.Light.NoTitle" parent="@style/V5.Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="v5_tab_indicator_style">@style/V5.Widget.TabIndicator.NoTitle</item>
+        <item name="v5_top_placeholder_enabled">false</item>
+    </style>
+    <style name="V5.Theme.Light.Panel" parent="@style/V5.Theme.Light">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="V5.Theme.Light.Panel.Volume" parent="@style/V5.Theme.Light.Panel">
+        <item name="android:windowAnimationStyle">@style/V5.Animation.VolumePanel</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="V5.Theme.Light.Settings" parent="@style/V5.Theme.Light">
+        <item name="android:windowBackground">@drawable/v5_settings_window_bg_light</item>
+    </style>
+    <style name="V5.Theme.Light.Settings.NoTitle" parent="@style/V5.Theme.Light.Settings">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="V5.Theme.Light.Translucent" parent="@style/V5.Theme.Light">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="V5.Theme.Light.Translucent.NoTitle" parent="@style/V5.Theme.Light.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="v5_tab_indicator_style">@style/V5.Widget.TabIndicator.NoTitle</item>
+        <item name="v5_top_placeholder_enabled">false</item>
+    </style>
+    <style name="V5.Theme.NoDisplay" parent="@style/V5.Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoDisplay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="V5.Widget" parent="@style/V5" />
+    <style name="V5.Widget.ActionBar" parent="@*android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:progressBarStyle">@style/V5.Widget.ProgressBar.Horizontal</item>
+        <item name="android:background">?v5_title_bar_bg</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:divider">@null</item>
+        <item name="android:height">?android:actionBarSize</item>
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+        <item name="android:titleTextStyle">@style/V5.TextAppearance.Title</item>
+        <item name="android:subtitleTextStyle">@style/V5.TextAppearance.Title.Medium.Secondary</item>
+        <item name="android:indeterminateProgressStyle">@style/V5.Widget.ProgressBar</item>
+        <item name="android:homeLayout">@layout/v5_action_bar_home</item>
+        <item name="android:itemPadding">0.0dip</item>
+        <item name="android:backgroundStacked">@null</item>
+        <item name="android:backgroundSplit">@null</item>
+        <item name="android:paddingStart">0.0dip</item>
+        <item name="android:paddingEnd">0.0dip</item>
+    </style>
+    <style name="V5.Widget.ActionBar.NoTitle" parent="@style/V5.Widget.ActionBar">
+        <item name="android:displayOptions">none</item>
+    </style>
+    <style name="V5.Widget.ActionBar.Solid.Settings" parent="@*android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/v5_title_bar_bg_light</item>
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+        <item name="android:titleTextStyle">@style/V5.TextAppearance.Title</item>
+    </style>
+    <style name="V5.Widget.ActionBar.Split" parent="@style/V5.Widget.ActionBar">
+        <item name="android:background">@null</item>
+        <item name="android:backgroundSplit">@null</item>
+    </style>
+    <style name="V5.Widget.ActionBar.TabBar" parent="@*android:style/Widget.ActionBar.TabBar">
+        <item name="android:background">@null</item>
+        <item name="android:paddingStart">0.0dip</item>
+        <item name="android:paddingEnd">0.0dip</item>
+    </style>
+    <style name="V5.Widget.ActionBar.TabText" parent="@style/V5.TextAppearance.Title">
+        <item name="android:textSize">@dimen/v5_text_font_size_tab</item>
+        <item name="android:textColor">?v5_tab_text_color</item>
+    </style>
+    <style name="V5.Widget.ActionBar.TabView" parent="@*android:style/Widget.ActionBar.TabView">
+        <item name="android:gravity">center</item>
+        <item name="android:background">?v5_tab_bg</item>
+        <item name="android:paddingStart">0.0dip</item>
+        <item name="android:paddingEnd">0.0dip</item>
+    </style>
+    <style name="V5.Widget.ActionMode" parent="@style/V5.Widget">
+        <item name="android:background">?v5_edit_mode_top_bar_bg</item>
+        <item name="android:titleTextStyle">@style/V5.TextAppearance.EditMode</item>
+        <item name="android:subtitleTextStyle">@null</item>
+        <item name="android:backgroundSplit">@null</item>
+    </style>
+    <style name="V5.Widget.BottomBar" parent="@style/V5.Widget">
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">?v5_bottom_bar_bg</item>
+        <item name="android:layoutAnimation">@anim/v5_bottom_bar_layout_anim</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="V5.Widget.BottomBar.List" parent="@style/V5.Widget.BottomBar">
+        <item name="android:gravity">top|left|center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">?v5_menu_list_view_bg</item>
+        <item name="android:layoutAnimation">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="V5.Widget.BottomBar.List.Item" parent="@style/V5.Widget.BottomBar.List">
+        <item name="android:textAppearance">@style/V5.TextAppearance.MenuList</item>
+        <item name="android:textColor">?v5_bottom_bar_list_text_color</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">?v5_menu_list_view_item_bg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="V5.Widget.BottomBar.TopLine" parent="@style/V5.Widget.BottomBar">
+        <item name="android:background">?v5_bottom_bar_top_line</item>
+    </style>
+    <style name="V5.Widget.BottomBarIcon" parent="@style/V5.Widget">
+        <item name="android:textAppearance">@style/V5.TextAppearance.BottomBarIcon</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">?v5_bottom_bar_icon_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">?v5_bottom_bar_icon_text_shadow</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:hapticFeedbackEnabled">true</item>
+    </style>
+    <style name="V5.Widget.Button" parent="@*android:style/Widget.Button">
+        <item name="android:textAppearance">@style/V5.TextAppearance.Button</item>
+        <item name="android:textColor">?v5_button_text_color</item>
+        <item name="android:background">?v5_btn_bg</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="V5.Widget.Button.Dialog" parent="@style/V5.Widget.Button">
+        <item name="android:background">@drawable/v5_popup_btn_light</item>
+    </style>
+    <style name="V5.Widget.Button.NegativeWarn" parent="@style/V5.Widget.Button">
+        <item name="android:textAppearance">@style/V5.TextAppearance.Button.Warn</item>
+        <item name="android:textColor">@color/v5_button_text_dark</item>
+        <item name="android:background">?v5_btn_bg_negative_warn</item>
+    </style>
+    <style name="V5.Widget.Button.PositiveWarn" parent="@style/V5.Widget.Button">
+        <item name="android:textAppearance">@style/V5.TextAppearance.Button.Warn</item>
+        <item name="android:textColor">@color/v5_button_text_dark</item>
+        <item name="android:background">?v5_btn_bg_positive_warn</item>
+    </style>
+    <style name="V5.Widget.Button.Rect" parent="@style/V5.Widget.Button">
+        <item name="android:background">?v5_btn_bg_rect</item>
+    </style>
+    <style name="V5.Widget.ButtonBar" parent="@*android:style/Holo.ButtonBar">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerPadding">0.0dip</item>
+    </style>
+    <style name="V5.Widget.CompoundButton" parent="@*android:style/Widget.CompoundButton" />
+    <style name="V5.Widget.CompoundButton.CheckBox" parent="@*android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">@dimen/v5_text_font_size_primary</item>
+        <item name="android:textColor">?v5_checkable_btn_text_color_stable</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">0.0dip</item>
+    </style>
+    <style name="V5.Widget.CompoundButton.RadioButton" parent="@*android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">@dimen/v5_text_font_size_primary</item>
+        <item name="android:textColor">?v5_checkable_btn_text_color</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">0.0dip</item>
+    </style>
+    <style name="V5.Widget.DatePicker" parent="@*android:style/Widget.DatePicker">
+        <item name="android:calendarViewShown">false</item>
+        <item name="android:internalLayout">@layout/v5_date_picker</item>
+    </style>
+    <style name="V5.Widget.DialogTitle" parent="@style/V5.Widget">
+        <item name="android:textAppearance">@style/V5.TextAppearance.DialogTitle</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="V5.Widget.DropDownItem" parent="@style/V5.Widget">
+        <item name="android:textAppearance">@style/V5.TextAppearance.MenuList</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/v5_dialog_list_item_bg_light</item>
+        <item name="android:paddingStart">@dimen/v5_list_view_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/v5_list_view_padding_horizontal</item>
+    </style>
+    <style name="V5.Widget.DropDownItem.Spinner" parent="@style/V5.Widget.DropDownItem">
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:checkMark">?android:listChoiceIndicatorSingle</item>
+        <item name="android:paddingStart">0.0dip</item>
+    </style>
+    <style name="V5.Widget.EditMode" parent="@style/V5.Widget" />
+    <style name="V5.Widget.EditMode.Bottom" parent="@style/V5.Widget.EditMode">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="V5.Widget.EditMode.BottomBar" parent="@style/V5.Widget.EditMode">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">?v5_edit_mode_bottom_bar_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="V5.Widget.EditMode.BottomBar.List" parent="@style/V5.Widget.EditMode.BottomBar">
+        <item name="android:gravity">top|left|center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">?v5_edit_mode_bottom_bar_list_bg</item>
+        <item name="android:layoutAnimation">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:listSelector">@*android:color/transparent</item>
+    </style>
+    <style name="V5.Widget.EditMode.BottomBar.List.Item" parent="@style/V5.Widget.EditMode.BottomBar.List">
+        <item name="android:textAppearance">@style/V5.TextAppearance.MenuList</item>
+        <item name="android:textColor">@color/v5_menu_preference_list_text_dark</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">?v5_edit_mode_bottom_bar_list_item_bg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="V5.Widget.EditMode.BottomBarIcon" parent="@style/V5.Widget.EditMode">
+        <item name="android:textAppearance">@style/V5.TextAppearance.BottomBarIcon.EditMode</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">?v5_edit_mode_bottom_bar_icon_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:hapticFeedbackEnabled">true</item>
+    </style>
+    <style name="V5.Widget.EditMode.TopBar" parent="@style/V5.Widget.EditMode">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">?v5_edit_mode_top_bar_bg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="V5.Widget.EditMode.TopBar.Button" parent="@*android:style/Widget.Button">
+        <item name="android:textAppearance">@style/V5.TextAppearance.EditMode.Button</item>
+        <item name="android:textColor">?v5_edit_mode_btn_text_color</item>
+        <item name="android:background">?v5_edit_mode_top_bar_button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">0.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:hapticFeedbackEnabled">true</item>
+    </style>
+    <style name="V5.Widget.EditMode.TopBar.Button.Default" parent="@style/V5.Widget.EditMode.TopBar.Button">
+        <item name="android:textColor">?v5_edit_mode_btn_default_text_color</item>
+        <item name="android:background">?v5_edit_mode_top_bar_button_main</item>
+    </style>
+    <style name="V5.Widget.EditMode.TopBar.NoShadow" parent="@style/V5.Widget.EditMode.TopBar">
+        <item name="android:background">?v5_edit_mode_top_bar_no_shadow_bg</item>
+    </style>
+    <style name="V5.Widget.EditText" parent="@*android:style/Widget.EditText">
+        <item name="android:textAppearance">@style/V5.TextAppearance.EditText</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">?v5_edit_text_bg</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@drawable/v5_text_cursor_holo</item>
+    </style>
+    <style name="V5.Widget.EditText.Search" parent="@style/V5.Widget.EditText">
+        <item name="android:background">?v5_edit_text_search_bg</item>
+        <item name="android:drawableRight">?v5_edit_text_search_clear_btn</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:textCursorDrawable">@drawable/v5_text_cursor_holo</item>
+    </style>
+    <style name="V5.Widget.ExpandableListView" parent="@style/V5.Widget.ListView">
+        <item name="android:groupIndicator">?v5_expander_group_indicator</item>
+        <item name="android:indicatorLeft">?android:expandableListPreferredItemIndicatorLeft</item>
+        <item name="android:indicatorRight">?android:expandableListPreferredItemIndicatorRight</item>
+        <item name="android:childDivider">@null</item>
+    </style>
+    <style name="V5.Widget.ExpandableListView.GroupItem" parent="@style/V5.Widget">
+        <item name="android:textAppearance">@style/V5.TextAppearance.ExpandableListView.GroupItem</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">?v5_expander_group_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingStart">?android:expandableListPreferredItemPaddingLeft</item>
+    </style>
+    <style name="V5.Widget.ExpandableListView.White" parent="@style/V5.Widget.ExpandableListView">
+        <item name="android:groupIndicator">@drawable/v5_expander_group_indicator_light</item>
+    </style>
+    <style name="V5.Widget.ListPopupWindow" parent="@style/V5.Widget">
+        <item name="android:dropDownSelector">@null</item>
+        <item name="android:popupBackground">?v5_list_popup_window_bg</item>
+        <item name="android:dropDownWidth">fill_parent</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">10.0dip</item>
+    </style>
+    <style name="V5.Widget.ListView" parent="@*android:style/Widget.ListView.White">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@*android:color/transparent</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@null</item>
+    </style>
+    <style name="V5.Widget.ListView.DropDown" parent="@style/V5.Widget.ListView" />
+    <style name="V5.Widget.ListView.Item" parent="@style/V5.Widget">
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">?v5_list_view_item_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="V5.Widget.ListView.Item.DoubleLine" parent="@style/V5.Widget.ListView.Item">
+        <item name="android:textAppearance">@style/V5.TextAppearance.List.Primary</item>
+        <item name="android:layout_height">@dimen/v5_list_view_double_line_height</item>
+        <item name="android:minHeight">@dimen/v5_list_view_double_line_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">@dimen/v5_list_view_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/v5_list_view_padding_horizontal</item>
+    </style>
+    <style name="V5.Widget.ListView.Item.SingleLine" parent="@style/V5.Widget.ListView.Item">
+        <item name="android:textAppearance">@style/V5.TextAppearance.List</item>
+        <item name="android:layout_height">@dimen/v5_list_view_single_line_height</item>
+        <item name="android:minHeight">@dimen/v5_list_view_single_line_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">@dimen/v5_list_view_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/v5_list_view_padding_horizontal</item>
+    </style>
+    <style name="V5.Widget.ListView.Item.TrebleLine" parent="@style/V5.Widget.ListView.Item">
+        <item name="android:textAppearance">@style/V5.TextAppearance.List.Primary</item>
+        <item name="android:layout_height">@dimen/v5_list_view_treble_line_height</item>
+        <item name="android:minHeight">@dimen/v5_list_view_treble_line_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">@dimen/v5_list_view_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/v5_list_view_padding_horizontal</item>
+    </style>
+    <style name="V5.Widget.PopupMenu" parent="@*android:style/Widget.PopupMenu">
+        <item name="android:windowAnimationStyle">@style/V5.Animation.Dialog</item>
+        <item name="android:dropDownSelector">@drawable/v5_dialog_list_item_bg_light</item>
+        <item name="android:popupBackground">@drawable/v5_dialog_bg_light</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">-10.0dip</item>
+    </style>
+    <style name="V5.Widget.ProgressBar" parent="@*android:style/Widget.ProgressBar">
+        <item name="android:background">?v5_progress_bar_bg</item>
+        <item name="android:maxWidth">@dimen/v5_progress_bar_size</item>
+        <item name="android:maxHeight">@dimen/v5_progress_bar_size</item>
+        <item name="android:indeterminateDrawable">?v5_progress_bar_ani</item>
+        <item name="android:minWidth">@dimen/v5_progress_bar_size</item>
+        <item name="android:minHeight">@dimen/v5_progress_bar_size</item>
+    </style>
+    <style name="V5.Widget.ProgressBar.Horizontal" parent="@*android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:background">@null</item>
+        <item name="android:maxHeight">@dimen/v5_horizontal_progress_bar_height</item>
+        <item name="android:indeterminateDrawable">@drawable/v5_progress_horizontal_indeterminate</item>
+        <item name="android:progressDrawable">@drawable/v5_progress_horizontal</item>
+        <item name="android:minHeight">@dimen/v5_horizontal_progress_bar_height</item>
+        <item name="progressBar">@drawable/v5_progress_bar</item>
+        <item name="progressBarMask">@drawable/v5_progress_mask</item>
+    </style>
+    <style name="V5.Widget.ProgressBar.Large" parent="@*android:style/Widget.ProgressBar">
+        <item name="android:background">?v5_progress_bar_bg_large</item>
+        <item name="android:maxWidth">@dimen/v5_progress_bar_size_large</item>
+        <item name="android:maxHeight">@dimen/v5_progress_bar_size_large</item>
+        <item name="android:indeterminateDrawable">?v5_progress_bar_ani_large</item>
+        <item name="android:minWidth">@dimen/v5_progress_bar_size_large</item>
+        <item name="android:minHeight">@dimen/v5_progress_bar_size_large</item>
+    </style>
+    <style name="V5.Widget.ProgressBar.Small" parent="@*android:style/Widget.ProgressBar">
+        <item name="android:background">?v5_progress_bar_bg_small</item>
+        <item name="android:maxWidth">@dimen/v5_progress_bar_size_small</item>
+        <item name="android:maxHeight">@dimen/v5_progress_bar_size_small</item>
+        <item name="android:indeterminateDrawable">?v5_progress_bar_ani_small</item>
+        <item name="android:minWidth">@dimen/v5_progress_bar_size_small</item>
+        <item name="android:minHeight">@dimen/v5_progress_bar_size_small</item>
+    </style>
+    <style name="V5.Widget.SecondaryTab" parent="@style/V5.Widget">
+        <item name="android:textAppearance">@style/V5.TextAppearance.SecondaryTabIndicator</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?v5_secondary_tab_bg</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">?v5_secondary_tab_indicator_text_shadow</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">5.0</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="V5.Widget.SecondaryTabIndicator" parent="@style/V5.Widget">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">?v5_secondary_tab_indicator_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="V5.Widget.SeekBar" parent="@style/V5.Widget">
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">@dimen/v5_seekbar_height</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:progressDrawable">@drawable/v5_seekbar_bg</item>
+        <item name="android:minHeight">@dimen/v5_seekbar_height</item>
+        <item name="android:thumb">@drawable/v5_seekbar_control_selector</item>
+        <item name="android:thumbOffset">8.0dip</item>
+        <item name="android:paddingStart">8.0dip</item>
+        <item name="android:paddingEnd">8.0dip</item>
+        <item name="progressBar">@drawable/v5_seekbar_progress</item>
+        <item name="progressBarMask">@drawable/v5_seekbar_progress_mask</item>
+    </style>
+    <style name="V5.Widget.SlidingButton" parent="@style/V5.Widget">
+        <item name="buttonBarOff">@drawable/v5_sliding_btn_off</item>
+        <item name="buttonBarOn">@drawable/v5_sliding_btn_on</item>
+        <item name="buttonFrame">@drawable/v5_sliding_btn_frame</item>
+        <item name="buttonMask">@drawable/v5_sliding_btn_mask</item>
+        <item name="buttonOffDisable">@drawable/v5_sliding_btn_off_disable</item>
+        <item name="buttonOnDisable">@drawable/v5_sliding_btn_on_disable</item>
+        <item name="buttonSlider">@drawable/v5_sliding_btn_slider</item>
+        <item name="buttonSliderPressed">@drawable/v5_sliding_btn_slider_pressed</item>
+    </style>
+    <style name="V5.Widget.Spinner" parent="@*android:style/Widget.Spinner">
+        <item name="android:background">?v5_spinner_bg</item>
+        <item name="android:dropDownSelector">?v5_list_view_item_bg</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:dropDownHeight">@dimen/v5_list_view_single_line_height</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">0.0dip</item>
+    </style>
+    <style name="V5.Widget.Spinner.DropDown" parent="@style/V5.Widget.Spinner">
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+    <style name="V5.Widget.Tab" parent="@style/V5.Widget">
+        <item name="android:textAppearance">@style/V5.TextAppearance.TabIndicator</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?v5_tab_bg</item>
+    </style>
+    <style name="V5.Widget.TabIndicator" parent="@style/V5.Widget">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">?v5_tab_indicator_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="V5.Widget.TabIndicator.NoTitle" parent="@style/V5.Widget.TabIndicator">
+        <item name="android:background">?v5_tab_indicator_bg_no_title</item>
+    </style>
+    <style name="V5.Widget.TabIndicatorArrow" parent="@style/V5.Widget">
+        <item name="android:gravity">bottom|left|center</item>
+        <item name="android:src">?v5_tab_indicator_arrow</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="V5.Widget.TextView" parent="@*android:style/Widget.TextView">
+        <item name="android:textCursorDrawable">@drawable/v5_text_cursor_holo</item>
+    </style>
+    <style name="V5.Widget.TextView.ListSeparator" parent="@style/V5.Widget.TextView">
+        <item name="android:textAppearance">@style/V5.TextAppearance.Label</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/v5_preference_category_background</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/v5_list_view_separator_padding_left</item>
+    </style>
+    <style name="V5.Widget.TextView.SpinnerItem" parent="@*android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">@dimen/v5_text_font_size_primary</item>
+        <item name="android:textColor">?v5_button_text_color</item>
+    </style>
+    <style name="V5.Widget.TimePicker" parent="@style/V5.Widget">
+        <item name="android:internalLayout">@layout/v5_time_picker</item>
+    </style>
+    <style name="V5.Widget.Title" parent="@style/V5.Widget">
+        <item name="android:textAppearance">@style/V5.TextAppearance.Title</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">?v5_title_bar_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">?v5_title_text_shadow</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">5.0</item>
+        <item name="android:shadowRadius">10.0</item>
+    </style>
+    <style name="V5.Widget.Title.Back" parent="@style/V5.Widget.Title">
+        <item name="android:textColor">@*android:color/transparent</item>
+        <item name="android:background">?v5_title_bar_back_button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">0.0dip</item>
+        <item name="android:minHeight">0.0dip</item>
+        <item name="android:contentDescription">@string/android_action_bar_up_description</item>
+    </style>
+    <style name="V5.Widget.Title.Back.Large" parent="@style/V5.Widget.Title.Back">
+        <item name="android:background">?v5_title_bar_back_button_large</item>
+    </style>
+    <style name="V5.Widget.Title.Back.Medium" parent="@style/V5.Widget.Title.Back">
+        <item name="android:background">?v5_title_bar_back_button_medium</item>
+    </style>
+    <style name="V5.Widget.Title.Back.Search" parent="@style/V5.Widget.Title.Back">
+        <item name="android:background">?v5_title_bar_back_button_search_mode</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="V5.Widget.Title.Large" parent="@style/V5.Widget.Title">
+        <item name="android:textAppearance">@style/V5.TextAppearance.Title.Large</item>
+        <item name="android:background">?v5_title_bar_large_bg</item>
+    </style>
+    <style name="V5.Widget.Title.Medium" parent="@style/V5.Widget.Title">
+        <item name="android:textAppearance">@style/V5.TextAppearance.Title.Medium</item>
+        <item name="android:background">?v5_title_bar_medium_bg</item>
+    </style>
+    <style name="V5.Widget.Title.SearchMode" parent="@style/V5.Widget.Title">
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">?v5_title_bar_bg_search_mode</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <item type="style" name="android_Animation_RecentApplications">@*android:style/Animation.RecentApplications</item>
+    <style name="AccountUnlockScreenInstructionTitleTextStyle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="V5.Widget.MultiPositionBar" parent="@style/V5.Widget">
+        <item name="positionImage">@drawable/v5_multipositionbar_position_img</item>
+        <item name="entries">@null</item>
+        <item name="entryValues">@null</item>
+    </style>
+    <style name="V5.Widget.ProgressBar.Horizontal.Small" parent="@*android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:background">@null</item>
+        <item name="android:maxHeight">@dimen/v5_horizontal_progress_bar_small_height</item>
+        <item name="android:indeterminateDrawable">@drawable/v5_progress_horizontal_indeterminate_small</item>
+        <item name="android:progressDrawable">@drawable/v5_progress_horizontal_small</item>
+        <item name="android:minHeight">@dimen/v5_horizontal_progress_bar_small_height</item>
+        <item name="progressBar">@drawable/v5_progress_bar_small</item>
+        <item name="progressBarMask">@drawable/v5_progress_mask_small</item>
+    </style>
+    <style name="V5.Widget.SeekBar.ForMultiPositionBar" parent="@style/V5.Widget.SeekBar">
+        <item name="android:maxHeight">@dimen/v5_multipositionbar_seekbar_height</item>
+        <item name="android:progressDrawable">@drawable/v5_multipositionbar_bg</item>
+        <item name="android:minHeight">@dimen/v5_multipositionbar_seekbar_height</item>
+        <item name="android:thumb">@drawable/v5_multipositionbar_thumb</item>
+        <item name="progressBar">@null</item>
+        <item name="progressBarMask">@null</item>
+    </style>
+    <style name="V5.Widget.ActionBar.Large" parent="@style/V5.Widget.ActionBar">
+        <item name="android:height">@dimen/v5_action_bar_height_large</item>
+    </style>
+    <style name="V5.Widget.ActionBarMovableLayout" parent="@style/V5.Widget">
+        <item name="v5_over_scroll_distance">?v5_over_scroll_distance</item>
+    </style>
+    <style name="V5.Theme.Light.ActionBarMovable" parent="@style/V5.Theme.Light">
+        <item name="android:actionBarStyle">@style/V5.Widget.ActionBar.Large</item>
+        <item name="v5_action_bar_movable">true</item>
+        <item name="actionBarMovableLayoutStyle">@style/V5.Widget.ActionBarMovableLayout</item>
+    </style>
+    <style name="V5.Theme.Dark.ActionBarMovable" parent="@style/V5.Theme.Dark">
+        <item name="android:actionBarStyle">@style/V5.Widget.ActionBar.Large</item>
+        <item name="v5_action_bar_movable">true</item>
+        <item name="actionBarMovableLayoutStyle">@style/V5.Widget.ActionBarMovableLayout</item>
+    </style>
+    <style name="V5.Theme.Light.SearchBar" parent="@style/V5.Theme.Light.Panel">
+        <item name="android:actionModeBackground">?v5_title_bar_bg_search_mode</item>
+        <item name="android:homeAsUpIndicator">?v5_title_bar_back_button_search_mode</item>
+        <item name="android:selectableItemBackground">@*android:color/transparent</item>
+    </style>
+    <style name="V5.Theme.Dark.StatusBar" parent="@style/V5.Theme.Dark">
+        <item name="android:progressBarStyleHorizontal">@style/V5.Widget.ProgressBar.Horizontal.Small</item>
+    </style>
+    <style name="AlphabetFastIndexerStyleWithStarred" parent="@style/AlphabetFastIndexerStyle">
+        <item name="indexerTable">@array/alphabet_table_with_starred</item>
+    </style>
+    <style name="V5.Theme.IconPanel" parent="@style/V5.Theme">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="V5.Widget.Button.Dialog.Default" parent="@style/V5.Widget.Button.Dialog">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?v5_button_text_color</item>
+    </style>
+    <style name="V5.Widget.VerticalSeekBar" parent="@style/V5.Widget.SeekBar">
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:maxWidth">@dimen/v5_seekbar_height</item>
+        <item name="android:maxHeight">@null</item>
+        <item name="android:minWidth">@dimen/v5_seekbar_height</item>
+        <item name="android:minHeight">@null</item>
+        <item name="android:paddingStart">0.0dip</item>
+        <item name="android:paddingEnd">0.0dip</item>
+    </style>
+    <style name="V5.Widget.MediaButton" parent="@*android:style/MediaButton" />
+    <style name="V5.Widget.MediaButton.Previous" parent="@style/V5.Widget.MediaButton">
+        <item name="android:src">@drawable/v5_ic_media_previous</item>
+    </style>
+    <style name="V5.Widget.MediaButton.Next" parent="@style/V5.Widget.MediaButton">
+        <item name="android:src">@drawable/v5_ic_media_next</item>
+    </style>
+    <style name="V5.Widget.MediaButton.Play" parent="@style/V5.Widget.MediaButton">
+        <item name="android:src">@drawable/v5_ic_media_play</item>
+    </style>
+    <style name="V5.Widget.MediaButton.Ffwd" parent="@style/V5.Widget.MediaButton">
+        <item name="android:src">@drawable/v5_ic_media_ff</item>
+    </style>
+    <style name="V5.Widget.MediaButton.Rew" parent="@style/V5.Widget.MediaButton">
+        <item name="android:src">@drawable/v5_ic_media_rew</item>
+    </style>
+    <style name="V5.Widget.MediaButton.Pause" parent="@style/V5.Widget.MediaButton">
+        <item name="android:src">@drawable/v5_ic_media_pause</item>
+    </style>
+    <style name="V5.TextAppearance.List.Secondary.Preference" parent="@style/V5.TextAppearance.List.Secondary">
+        <item name="android:textColor">?v5_preference_secondary_text_color</item>
+    </style>
+    <style name="V5.Widget.RatingBar" parent="@*android:style/Widget.RatingBar">
+        <item name="android:maxHeight">@dimen/v5_rating_bar_size</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/v5_ratingbar_full</item>
+        <item name="android:progressDrawable">@drawable/v5_ratingbar_full</item>
+        <item name="android:minHeight">@dimen/v5_rating_bar_size</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+    <style name="V5.Widget.RatingBar.Indicator" parent="@*android:style/Widget.RatingBar">
+        <item name="android:maxHeight">@dimen/v5_rating_bar_size_indicator</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/v5_ratingbar</item>
+        <item name="android:progressDrawable">@drawable/v5_ratingbar</item>
+        <item name="android:minHeight">@dimen/v5_rating_bar_size_indicator</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="V5.Widget.RatingBar.Small" parent="@*android:style/Widget.RatingBar">
+        <item name="android:maxHeight">@dimen/v5_rating_bar_size_small</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/v5_ratingbar_small</item>
+        <item name="android:progressDrawable">@drawable/v5_ratingbar_small</item>
+        <item name="android:minHeight">@dimen/v5_rating_bar_size_small</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="V5.Widget.DateTimePicker" parent="@style/V5.Widget">
+        <item name="android:textSize">@dimen/v5_widget_date_time_picker_text_size</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+</resources>

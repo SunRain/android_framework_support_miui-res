@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="@style/V5.TextAppearance.Large" android:textColor="@color/information_warning" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" android:text="@string/experimental_validate_thanks" />
+        <TextView android:textAppearance="@style/V5.TextAppearance.Medium" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/experimental_validate_warning" />
+        <EditText android:id="@id/account_id" android:background="@drawable/experimental_input_username_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:hint="@string/experimental_validate_username" android:inputType="number" />
+        <EditText android:id="@id/password_account" android:background="@drawable/experimental_input_password_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:hint="@string/experimental_validate_password" android:inputType="textPassword" />
+        <TextView android:textAppearance="@style/V5.TextAppearance.Small" android:textColor="@color/information_warning" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/experimental_validate_fail" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/experimental_validate_fail" />
+        <Button android:gravity="center" android:id="@id/experimental_validate" android:background="@drawable/v5_btn_bg_positive_warn_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/experimental_validate" />
+    </LinearLayout>
+</ScrollView>

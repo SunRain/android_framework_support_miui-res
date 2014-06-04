@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alphabet_indexer_overlay_offset">20.0dip</dimen>
+    <dimen name="alphabet_indexer_overlay_padding_top">0.0dip</dimen>
+    <dimen name="alphabet_indexer_overlay_text_size">28.0dip</dimen>
+    <dimen name="alphabet_indexer_text_size">12.0dip</dimen>
+    <item type="dimen" name="android_default_app_widget_padding_bottom">@*android:dimen/default_app_widget_padding_bottom</item>
+    <item type="dimen" name="android_default_app_widget_padding_left">@*android:dimen/default_app_widget_padding_left</item>
+    <item type="dimen" name="android_default_app_widget_padding_right">@*android:dimen/default_app_widget_padding_right</item>
+    <item type="dimen" name="android_default_app_widget_padding_top">@*android:dimen/default_app_widget_padding_top</item>
+    <item type="dimen" name="android_glowpadview_glow_radius">@*android:dimen/glowpadview_glow_radius</item>
+    <item type="dimen" name="android_glowpadview_inner_radius">@*android:dimen/glowpadview_inner_radius</item>
+    <item type="dimen" name="android_navigation_bar_height">@*android:dimen/navigation_bar_height</item>
+    <item type="dimen" name="android_navigation_bar_width">@*android:dimen/navigation_bar_width</item>
+    <item type="dimen" name="android_notification_padding_left">@*android:dimen/notification_padding_left</item>
+    <item type="dimen" name="android_notification_padding_right">@*android:dimen/notification_padding_right</item>
+    <item type="dimen" name="android_preference_fragment_padding_bottom">@*android:dimen/preference_fragment_padding_bottom</item>
+    <item type="dimen" name="android_preference_fragment_padding_side">@*android:dimen/preference_fragment_padding_side</item>
+    <item type="dimen" name="android_preference_item_padding_inner">@*android:dimen/preference_item_padding_inner</item>
+    <item type="dimen" name="android_preference_item_padding_side">@*android:dimen/preference_item_padding_side</item>
+    <item type="dimen" name="android_preference_widget_width">@*android:dimen/preference_widget_width</item>
+    <item type="dimen" name="android_status_bar_height">@*android:dimen/status_bar_height</item>
+    <item type="dimen" name="android_status_bar_icon_size">@*android:dimen/status_bar_icon_size</item>
+    <item type="dimen" name="android_system_bar_height">@*android:dimen/system_bar_height</item>
+    <item type="dimen" name="android_system_bar_icon_size">@*android:dimen/system_bar_icon_size</item>
+    <dimen name="float_panel_arrow_bottom_offset">13.0dip</dimen>
+    <dimen name="float_panel_arrow_top_offset">4.0dip</dimen>
+    <dimen name="magnifier_finger_offset">70.0dip</dimen>
+    <dimen name="text_handle_visible_height">40.0dip</dimen>
+    <dimen name="v5_action_bar_height">40.0dip</dimen>
+    <dimen name="v5_action_bar_overlay_height">0.0dip</dimen>
+    <dimen name="v5_action_bar_subtitle_bottom_margin">5.0dip</dimen>
+    <dimen name="v5_action_bar_subtitle_top_margin">-3.0dip</dimen>
+    <dimen name="v5_alert_dialog_button_bar_height">48.0dip</dimen>
+    <dimen name="v5_alert_dialog_title_height">64.0dip</dimen>
+    <dimen name="v5_floating_view_over_distance">68.0dip</dimen>
+    <dimen name="v5_floating_view_top_hidden_size">15.0dip</dimen>
+    <dimen name="v5_list_view_double_line_height">55.0dip</dimen>
+    <dimen name="v5_list_view_double_line_photo_size">51.0dip</dimen>
+    <dimen name="v5_list_view_padding_horizontal">15.0dip</dimen>
+    <dimen name="v5_list_view_separator_padding_left">30.0dip</dimen>
+    <dimen name="v5_list_view_single_line_height">49.0dip</dimen>
+    <dimen name="v5_list_view_treble_line_height">63.0dip</dimen>
+    <dimen name="v5_list_view_treble_line_photo_size">60.0dip</dimen>
+    <dimen name="v5_min_anchor_velocity">150.0dip</dimen>
+    <dimen name="v5_over_fling_distance_dimen">80.0dip</dimen>
+    <dimen name="v5_over_scroll_distance_dimen">80.0dip</dimen>
+    <dimen name="v5_preference_category_item_padding_side">30.0dip</dimen>
+    <dimen name="v5_preference_child_padding_side">15.0dip</dimen>
+    <dimen name="v5_preference_dialog_edittext_margin">48.0dip</dimen>
+    <dimen name="v5_preference_dialog_edittext_padding_side">20.0dip</dimen>
+    <dimen name="v5_preference_dialog_edittext_padding_top">5.0dip</dimen>
+    <dimen name="v5_preference_icon_minWidth">0.0dip</dimen>
+    <dimen name="v5_preference_icon_padding_side">10.0dip</dimen>
+    <dimen name="v5_preference_item_padding_bottom">6.0dip</dimen>
+    <dimen name="v5_preference_item_padding_inner">8.0dip</dimen>
+    <dimen name="v5_preference_item_padding_side">15.0dip</dimen>
+    <dimen name="v5_preference_item_padding_top">6.0dip</dimen>
+    <dimen name="v5_preference_screen_padding_bottom">15.0dip</dimen>
+    <dimen name="v5_preference_screen_padding_top">20.0dip</dimen>
+    <dimen name="v5_preference_widget_width">48.0dip</dimen>
+    <dimen name="v5_split_action_bar_overlay_height">0.0dip</dimen>
+    <dimen name="v5_text_font_size_button">15.0sp</dimen>
+    <dimen name="v5_text_font_size_edit_mode_button">14.0sp</dimen>
+    <dimen name="v5_text_font_size_large">17.0sp</dimen>
+    <dimen name="v5_text_font_size_list_primary">16.0sp</dimen>
+    <dimen name="v5_text_font_size_list_secondary">13.0sp</dimen>
+    <dimen name="v5_text_font_size_main_page_title">27.0sp</dimen>
+    <dimen name="v5_text_font_size_medium">16.0sp</dimen>
+    <dimen name="v5_text_font_size_memo">11.0sp</dimen>
+    <dimen name="v5_text_font_size_preference_category">14.0sp</dimen>
+    <dimen name="v5_text_font_size_primary">16.0sp</dimen>
+    <dimen name="v5_text_font_size_small">13.0sp</dimen>
+    <dimen name="v5_text_font_size_tab">15.0sp</dimen>
+    <dimen name="v5_text_font_size_textedit">15.0sp</dimen>
+    <dimen name="v5_text_font_size_title">17.0sp</dimen>
+    <dimen name="v5_text_font_size_title_bar_medium">21.0sp</dimen>
+    <dimen name="v5_text_font_size_title_bar_secondary_medium">13.0sp</dimen>
+    <dimen name="v5_translate_slop">60.0dip</dimen>
+    <dimen name="v5_volume_panel_top">163.0dip</dimen>
+    <dimen name="keyguard_lockscreen_clock_font_size">80.0dip</dimen>
+    <dimen name="keyguard_lockscreen_status_line_font_size">14.0dip</dimen>
+    <dimen name="keyguard_lockscreen_status_line_font_right_margin">42.0dip</dimen>
+    <dimen name="keyguard_lockscreen_status_line_clockfont_top_margin">22.0dip</dimen>
+    <dimen name="keyguard_lockscreen_status_line_clockfont_bottom_margin">12.0dip</dimen>
+    <dimen name="text_size_in_numeric_keyboard">32.0px</dimen>
+    <dimen name="miui_numeric_keyboard_row_height">75.0dip</dimen>
+    <dimen name="miui_password_input_area_bg_bottom_offset">300.0dip</dimen>
+    <dimen name="v5_horizontal_progress_bar_height">24.0dip</dimen>
+    <dimen name="v5_horizontal_progress_bar_small_height">12.0dip</dimen>
+    <dimen name="v5_seekbar_height">32.0dip</dimen>
+    <dimen name="v5_multipositionbar_seekbar_height">10.0dip</dimen>
+    <dimen name="v5_action_bar_height_large">278.0dip</dimen>
+    <dimen name="deprecated_2">0.0dip</dimen>
+    <item type="dimen" name="android_dropdownitem_text_padding_right">@*android:dimen/dropdownitem_text_padding_right</item>
+    <item type="dimen" name="android_search_view_text_min_width">@*android:dimen/search_view_text_min_width</item>
+    <item type="dimen" name="android_notification_content_to_icon_length">@*android:dimen/notification_content_margin_left_to_icon</item>
+    <dimen name="deprecated_1">0.0dip</dimen>
+    <dimen name="deprecated_3">0.0dip</dimen>
+    <dimen name="deprecated_4">0.0dip</dimen>
+    <dimen name="deprecated_5">0.0dip</dimen>
+    <dimen name="deprecated_6">0.0dip</dimen>
+    <dimen name="deprecated_7">0.0dip</dimen>
+    <dimen name="deprecated_8">0.0dip</dimen>
+    <dimen name="deprecated_9">0.0dip</dimen>
+    <dimen name="deprecated_10">0.0dip</dimen>
+    <dimen name="deprecated_11">0.0dip</dimen>
+    <dimen name="deprecated_12">0.0dip</dimen>
+    <dimen name="deprecated_13">0.0dip</dimen>
+    <dimen name="deprecated_14">0.0dip</dimen>
+    <dimen name="v5_progress_bar_size_small">40.0dip</dimen>
+    <dimen name="v5_progress_bar_size">48.0dip</dimen>
+    <dimen name="v5_progress_bar_size_large">76.0dip</dimen>
+    <dimen name="v5_rating_bar_size">23.0dip</dimen>
+    <dimen name="v5_rating_bar_size_indicator">23.0dip</dimen>
+    <dimen name="v5_rating_bar_size_small">12.0dip</dimen>
+    <dimen name="deprecated_15">0.0dip</dimen>
+    <dimen name="text_select_handle_no_shadow_height">34.0dip</dimen>
+    <dimen name="float_panel_round_corner_width">15.0dip</dimen>
+    <dimen name="magnifier_round_radius">2.5dip</dimen>
+    <dimen name="text_select_mark_match_handle_height">52.0dip</dimen>
+    <dimen name="text_select_handle_no_shadow_min_height">15.0dip</dimen>
+    <dimen name="v5_volume_panel_seeekbar_width">250.0dip</dimen>
+    <item type="dimen" name="android_notification_height">@*android:dimen/notification_height</item>
+    <item type="dimen" name="android_notification_action_height">@*android:dimen/notification_action_height</item>
+    <dimen name="v5_widget_date_time_picker_text_size">20.0sp</dimen>
+    <dimen name="window_background_blur_radius">5.0dip</dimen>
+    <dimen name="v5_text_font_size_textview_float_panel_button">13.0sp</dimen>
+    <dimen name="miui_account_unlock_screen_button_top_padding">50.0dip</dimen>
+    <dimen name="miui_account_unlock_screen_button_horizontal_padding">10.0dip</dimen>
+    <dimen name="miui_password_unlock_screen_input_padding">20.0dip</dimen>
+    <dimen name="miui_password_unlock_screen_edittext_horizontal_padding">10.0dip</dimen>
+    <dimen name="miui_common_unlock_screen_top_margin">60.0dip</dimen>
+    <dimen name="miui_common_unlock_screen_info_text_top_margin">8.0dip</dimen>
+    <dimen name="miui_common_unlock_screen_info_text_padding">10.0dip</dimen>
+    <dimen name="miui_pattern_unlock_screen_error_msg_text_size">18.0sp</dimen>
+    <dimen name="miui_common_unlock_screen_date_msg_text_size">14.0sp</dimen>
+    <dimen name="miui_common_unlock_screen_info_msg_text_size">13.0sp</dimen>
+    <dimen name="miui_password_unlock_screen_warn_msg_text_size">20.0sp</dimen>
+    <dimen name="miui_password_unlock_screen_error_text_size">18.0sp</dimen>
+    <dimen name="miui_password_unlock_screen_carrier_text_size">9.0sp</dimen>
+    <dimen name="keyboard_key_text_size">14.0sp</dimen>
+</resources>
