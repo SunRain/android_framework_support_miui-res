@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="alphabet_indexer_highlight_text_color">#fff36e0d</color>
     <color name="alphabet_indexer_overlay_text_color">#ffffffff</color>
     <color name="alphabet_indexer_text_color">#ff8c8c8c</color>
-    <item type="color" name="android_config_defaultNotificationColor">@*android:color/config_defaultNotificationColor</item>
+
+    <item name="android_config_defaultNotificationColor" type="color">@*android:color/config_defaultNotificationColor</item>
+
     <color name="guide_popup_window_textColor">#ffffffff</color>
     <color name="information_warning">#ffff7e00</color>
     <color name="miro_content_mask">#55000000</color>
@@ -81,8 +84,10 @@
     <color name="deprecated_2">#00000000</color>
     <color name="deprecated_3">#00000000</color>
     <color name="icon_panel_bg_mask">#aa000000</color>
-    <item type="color" name="v5_global_action_item_text_color_normal">@*android:color/black</item>
-    <item type="color" name="v5_global_action_item_text_color_pressed">@*android:color/white</item>
+
+    <item name="v5_global_action_item_text_color_normal" type="color">@*android:color/black</item>
+    <item name="v5_global_action_item_text_color_pressed" type="color">@*android:color/white</item>
+
     <color name="v5_preference_primary_text_color_light">#cc000000</color>
     <color name="v5_preference_primary_text_color_disable_light">#4d000000</color>
     <color name="v5_preference_secondary_text_color_light">#80000000</color>
@@ -102,8 +107,10 @@
     <color name="deprecated_8">#00000000</color>
     <color name="deprecated_9">#00000000</color>
     <color name="power_off_dialog_background_cover_color">#af000000</color>
-    <item type="color" name="v5_volume_panel_text_color">@*android:color/white</item>
-    <item type="color" name="grant_permission_title_color">@*android:color/white</item>
+
+    <item name="v5_volume_panel_text_color" type="color">@*android:color/white</item>
+    <item name="grant_permission_title_color" type="color">@*android:color/white</item>
+
     <color name="grant_permission_summary_color">#ff808080</color>
     <color name="miui_pattern_unlock_screen_error_msg_text_color">#ffff0000</color>
     <color name="miui_common_unlock_screen_date_text_color">#c8ffffff</color>
@@ -111,4 +118,5 @@
     <color name="miui_password_unlock_screen_warn_msg_text_color">#ffffffff</color>
     <color name="miui_password_unlock_screen_error_text_color">#ffff0000</color>
     <color name="miui_password_unlock_screen_carrier_text_color">#ffffffff</color>
+
 </resources>

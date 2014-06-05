@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/v5_search_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:gravity="left|center" android:id="@id/search_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:paddingStart="42.0dip" style="@miui:style/V5.Widget.Title.SearchMode">
-        <view android:layout_gravity="left|center" android:id="@*android:id/input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:imeOptions="actionSearch" class="miui.widget.ClearableEditText" style="@miui:style/V5.Widget.EditText.Search" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/v5_search_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true" >
+
+    <FrameLayout
+        android:id="@id/search_wrapper"
+        style="@miui:style/V5.Widget.Title.SearchMode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left|center"
+        android:paddingStart="42.0dip" >
+
+        <view
+            android:id="@*android:id/input"
+            style="@miui:style/V5.Widget.EditText.Search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            class="miui.widget.ClearableEditText"
+            android:imeOptions="actionSearch" />
     </FrameLayout>
-    <ImageView android:id="@*android:id/home" android:visibility="gone" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@miui:style/V5.Widget.Title.Back.Search" />
+
+    <ImageView
+        android:id="@*android:id/home"
+        style="@miui:style/V5.Widget.Title.Back.Search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
 </RelativeLayout>

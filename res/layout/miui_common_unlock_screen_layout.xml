@@ -1,19 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/miui_common_unlock_screen_top_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.miui.internal.policy.impl.MiuiUnlockScreenDigitalClock android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/time" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <ImageView android:id="@id/first_digital" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-            <ImageView android:id="@id/second_digital" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-            <ImageView android:id="@id/dot_digital" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/miui_lock_screen_time_bar_dot" />
-            <ImageView android:id="@id/third_digital" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-            <ImageView android:id="@id/fouth_digital" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/miui_common_unlock_screen_top_margin" >
+
+    <com.miui.internal.policy.impl.MiuiUnlockScreenDigitalClock
+        android:id="@id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@id/first_digital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@id/second_digital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@id/dot_digital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/miui_lock_screen_time_bar_dot" />
+
+            <ImageView
+                android:id="@id/third_digital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@id/fouth_digital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
-        <TextView android:textSize="@dimen/miui_common_unlock_screen_date_msg_text_size" android:textColor="@color/miui_common_unlock_screen_date_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/current_date" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+
+        <TextView
+            android:id="@id/current_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8.0dip"
+            android:gravity="center"
+            android:textColor="@color/miui_common_unlock_screen_date_text_color"
+            android:textSize="@dimen/miui_common_unlock_screen_date_msg_text_size"
+            android:visibility="gone" />
     </com.miui.internal.policy.impl.MiuiUnlockScreenDigitalClock>
-    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sim_locked_block" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/miui_common_unlock_screen_top_margin">
-        <ImageView android:id="@id/sim_locked_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-        <TextView android:textColor="@color/v5_text_color_pressed_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sim_locked" />
+
+    <LinearLayout
+        android:id="@id/sim_locked_block"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/miui_common_unlock_screen_top_margin"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@id/sim_locked_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sim_locked"
+            android:textColor="@color/v5_text_color_pressed_light" />
     </LinearLayout>
-    <TextView android:textSize="@dimen/miui_common_unlock_screen_info_msg_text_size" android:textColor="@color/miui_common_unlock_screen_info_text_color" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/lock_screen_info" android:padding="@dimen/miui_common_unlock_screen_info_text_padding" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/miui_common_unlock_screen_info_text_top_margin" android:singleLine="true" />
+
+    <TextView
+        android:id="@id/lock_screen_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/miui_common_unlock_screen_info_text_top_margin"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:padding="@dimen/miui_common_unlock_screen_info_text_padding"
+        android:singleLine="true"
+        android:textColor="@color/miui_common_unlock_screen_info_text_color"
+        android:textSize="@dimen/miui_common_unlock_screen_info_msg_text_size" />
+
 </LinearLayout>

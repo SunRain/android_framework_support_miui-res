@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.android.internal.view.menu.ExpandedMenuView android:windowAnimationStyle="@style/V5.Animation.Menu" android:id="@id/android_expanded_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" style="?android:attr/listViewStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<com.android.internal.view.menu.ExpandedMenuView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/android_expanded_menu"
+    style="?android:attr/listViewStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:divider="@null"
+    android:windowAnimationStyle="@style/V5.Animation.Menu" />

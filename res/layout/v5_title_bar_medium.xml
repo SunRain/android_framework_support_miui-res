@@ -1,16 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1" style="@miui:style/V5.Widget.Title.Medium"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TableRow android:gravity="center_vertical">
-        <ImageView android:id="@*android:id/home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" style="@miui:style/V5.Widget.Title.Back.Medium" />
-        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                <TextView android:ellipsize="marquee" android:gravity="left|center" android:id="@*android:id/primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@miui:style/V5.TextAppearance.Title.Medium" />
-                <TextView android:gravity="left|center" android:id="@*android:id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@miui:style/V5.TextAppearance.Title.Medium.Secondary" />
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@miui:style/V5.Widget.Title.Medium"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:shrinkColumns="1"
+    android:stretchColumns="1" >
+
+    <TableRow android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@*android:id/home"
+            style="@miui:style/V5.Widget.Title.Back.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@*android:id/primary"
+                    style="@miui:style/V5.TextAppearance.Title.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:gravity="left|center"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@*android:id/message"
+                    style="@miui:style/V5.TextAppearance.Title.Medium.Secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:singleLine="true" />
             </LinearLayout>
-            <ImageView android:id="@*android:id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+
+            <ImageView
+                android:id="@*android:id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center" />
         </LinearLayout>
-        <ImageView android:id="@*android:id/toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
-        <FrameLayout android:id="@*android:id/custom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@*android:id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center" />
+
+        <FrameLayout
+            android:id="@*android:id/custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </TableRow>
+
 </TableLayout>

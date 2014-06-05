@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <plurals name="a_hour_ago">
         <item quantity="other">1小時前</item>
     </plurals>
@@ -56,4 +57,5 @@
         <item quantity="other">已選擇%1$d個</item>
         <item quantity="one">已選擇%1$d個</item>
     </plurals>
+
 </resources>

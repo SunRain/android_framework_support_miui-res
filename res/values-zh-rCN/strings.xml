@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="activate">激活</string>
     <string name="activate_fail_notification_title">请重新激活小米同步</string>
     <string name="activating">正在激活...</string>
@@ -423,4 +424,5 @@ MIUI"</string>
     <string name="return_to_me_message">这是我的手机, 拾到请归还</string>
     <string name="unlock_string">解锁</string>
     <string name="lock_screen_date">M月d日 EEEE</string>
+
 </resources>

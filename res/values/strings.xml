@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="activate">Activate</string>
     <string name="activate_fail_notification_title">Reactivate sync</string>
     <string name="activating">Activating…</string>
@@ -666,4 +667,5 @@ Memory available: %2$s"</string>
     <string name="return_to_me_message">If lost please return to</string>
     <string name="unlock_string">OK</string>
     <string name="lock_screen_date">MM/dd EEEE</string>
+
 </resources>

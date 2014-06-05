@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:gravity="left|center" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@miui:style/V5.Widget.Title.SearchMode"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:layout_gravity="left|center" android:id="@*android:id/input" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@null" style="@miui:style/V5.Widget.EditText.Search" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@miui:style/V5.Widget.Title.SearchMode"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:gravity="left|center" >
+
+    <TextView
+        android:id="@*android:id/input"
+        style="@miui:style/V5.Widget.EditText.Search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:clickable="false"
+        android:drawableRight="@null"
+        android:focusable="false" />
+
 </FrameLayout>

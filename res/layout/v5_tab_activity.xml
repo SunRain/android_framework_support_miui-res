@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:miui="http://schemas.android.com/apk/res/miui">
-    <miui.v5.widget.CooperativeViewPager android:layout_gravity="top|left|center" android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <RelativeLayout android:layout_gravity="top|left|center" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <miui.v5.widget.TabContainerLayout android:id="@id/tab_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
-        <ImageView android:id="@id/v5_tab_indicator_shadow" android:background="?v5_tab_indicator_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tab_container" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:miui="http://schemas.android.com/apk/res/miui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <miui.v5.widget.CooperativeViewPager
+        android:id="@id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top|left|center" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left|center" >
+
+        <miui.v5.widget.TabContainerLayout
+            android:id="@id/tab_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@id/v5_tab_indicator_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_container"
+            android:background="?v5_tab_indicator_shadow" />
     </RelativeLayout>
+
 </FrameLayout>

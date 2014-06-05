@@ -1,12 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/miui_pattern_unlock_screen_error_msg_text_size" android:textStyle="bold" android:textColor="@color/miui_pattern_unlock_screen_error_msg_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/lock_screen_error_message" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/miui_pattern_unlock_screen_error_msg_text_color" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="0.2" />
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <com.android.internal.widget.MiuiLockPatternView android:layout_gravity="center_horizontal" android:id="@id/lockPattern" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" />
-            <Button android:textSize="@dimen/keyguard_lockscreen_status_line_font_size" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/emergencyCallButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emergency_call_string" android:drawableLeft="@drawable/lockscreen_emergency_button" android:drawablePadding="0.0dip" style="?android:attr/buttonBarButtonStyle" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="17.0dip"
+    android:gravity="bottom|center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/lock_screen_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:shadowColor="@color/miui_pattern_unlock_screen_error_msg_text_color"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="0.2"
+        android:singleLine="true"
+        android:textColor="@color/miui_pattern_unlock_screen_error_msg_text_color"
+        android:textSize="@dimen/miui_pattern_unlock_screen_error_msg_text_size"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.android.internal.widget.MiuiLockPatternView
+                android:id="@id/lockPattern"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip" />
+
+            <Button
+                android:id="@id/emergencyCallButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/lockscreen_emergency_button"
+                android:drawablePadding="0.0dip"
+                android:gravity="center"
+                android:text="@string/emergency_call_string"
+                android:textSize="@dimen/keyguard_lockscreen_status_line_font_size" />
         </LinearLayout>
-        <include android:id="@id/numeric_keyboard_overlay" android:visibility="gone" layout="@layout/miui_soft_keyboard_overlay" />
+
+        <include
+            android:id="@id/numeric_keyboard_overlay"
+            layout="@layout/miui_soft_keyboard_overlay"
+            android:visibility="gone" />
     </FrameLayout>
+
 </LinearLayout>

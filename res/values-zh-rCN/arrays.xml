@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string-array name="detailed_am_pm_names">
         <item>半夜</item>
         <item>凌晨</item>
@@ -51,4 +52,5 @@
         <item>地址</item>
         <item>备注</item>
     </string-array>
+
 </resources>

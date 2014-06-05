@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@drawable/v5_preference_category_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:layout_gravity="bottom" android:id="@*android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" android:paddingStart="@dimen/v5_preference_category_item_padding_side" android:paddingEnd="@dimen/v5_preference_category_item_padding_side" style="@style/V5.TextAppearance.PreferenceCategory" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/v5_preference_category_background" >
+
+    <TextView
+        android:id="@*android:id/title"
+        style="@style/V5.TextAppearance.PreferenceCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingEnd="@dimen/v5_preference_category_item_padding_side"
+        android:paddingStart="@dimen/v5_preference_category_item_padding_side"
+        android:textAllCaps="true" />
+
 </FrameLayout>

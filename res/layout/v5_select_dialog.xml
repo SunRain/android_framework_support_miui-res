@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<view android:id="@id/android_select_dialog_listview" android:scrollbars="vertical" android:layoutAnimation="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="?android:listDividerAlertDialog" android:overScrollMode="ifContentScrolls" class="com.android.internal.app.AlertController$RecycleListView"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/android_select_dialog_listview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    class="com.android.internal.app.AlertController$RecycleListView"
+    android:cacheColorHint="@null"
+    android:divider="?android:listDividerAlertDialog"
+    android:layoutAnimation="@null"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbars="vertical" />

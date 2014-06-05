@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.miui.internal.v5.view.menu.ActionMenuView android:layout_width="fill_parent" android:layout_height="wrap_content" miui:v5_action_menu_view_expaned_background="?v5_menu_primary_mask_bg" miui:v5_action_menu_view_more_icon="?v5_bottom_bar_more_icon" miui:v5_action_menu_view_secondary_container_layout="@layout/v5_action_menu_secondary_container_layout"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:miui="http://schemas.android.com/apk/res/miui">
-    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/v5_icon_menu_bar_real_primary_container" style="@miui:style/V5.Widget.BottomBar" />
+<com.miui.internal.v5.view.menu.ActionMenuView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:miui="http://schemas.android.com/apk/res/miui"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    miui:v5_action_menu_view_expaned_background="?v5_menu_primary_mask_bg"
+    miui:v5_action_menu_view_more_icon="?v5_bottom_bar_more_icon"
+    miui:v5_action_menu_view_secondary_container_layout="@layout/v5_action_menu_secondary_container_layout" >
+
+    <LinearLayout
+        android:id="@id/v5_icon_menu_bar_real_primary_container"
+        style="@miui:style/V5.Widget.BottomBar"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
 </com.miui.internal.v5.view.menu.ActionMenuView>

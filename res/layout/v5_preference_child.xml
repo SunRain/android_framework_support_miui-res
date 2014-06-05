@@ -1,12 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/v5_preference_icon_minWidth" android:paddingStart="@dimen/v5_preference_child_padding_side">
-        <ImageView android:layout_gravity="center" android:id="@*android:id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/v5_preference_item_padding_inner" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minWidth="@dimen/v5_preference_icon_minWidth"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/v5_preference_child_padding_side" >
+
+        <ImageView
+            android:id="@*android:id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingEnd="@dimen/v5_preference_item_padding_inner" />
     </LinearLayout>
-    <RelativeLayout android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="@dimen/v5_preference_item_padding_inner">
-        <TextView android:textAppearance="@style/V5.TextAppearance.PreferenceList" android:ellipsize="marquee" android:id="@*android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
-        <TextView android:textAppearance="@style/V5.TextAppearance.List.Secondary.Preference" android:id="@*android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" android:layout_below="@*android:id/title" android:layout_alignLeft="@*android:id/title" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:paddingBottom="6.0dip"
+        android:paddingEnd="@dimen/v5_preference_item_padding_inner"
+        android:paddingTop="6.0dip" >
+
+        <TextView
+            android:id="@*android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textAppearance="@style/V5.TextAppearance.PreferenceList" />
+
+        <TextView
+            android:id="@*android:id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@*android:id/title"
+            android:layout_below="@*android:id/title"
+            android:maxLines="10"
+            android:textAppearance="@style/V5.TextAppearance.List.Secondary.Preference" />
     </RelativeLayout>
-    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@*android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/v5_preference_widget_width" />
+
+    <LinearLayout
+        android:id="@*android:id/widget_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minWidth="@dimen/v5_preference_widget_width"
+        android:orientation="vertical" />
+
 </LinearLayout>

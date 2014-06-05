@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <dimen name="alphabet_indexer_overlay_offset">0.0dip</dimen>
     <dimen name="alphabet_indexer_overlay_text_size">20.0sp</dimen>
     <dimen name="alphabet_indexer_text_size">10.0sp</dimen>
@@ -14,4 +15,5 @@
     <dimen name="v5_seekbar_height">31.0dip</dimen>
     <dimen name="v5_multipositionbar_seekbar_height">15.0dip</dimen>
     <dimen name="v5_action_bar_height_large">313.0dip</dimen>
+
 </resources>

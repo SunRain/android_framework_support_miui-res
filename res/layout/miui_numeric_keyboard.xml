@@ -1,24 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Keyboard android:keyWidth="33.329998%p" android:keyHeight="@dimen/miui_numeric_keyboard_row_height" android:horizontalGap="0.0dip" android:verticalGap="0.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Row android:rowEdgeFlags="top">
-        <Key android:codes="8" android:keyEdgeFlags="left" android:keyIcon="@drawable/miui_numeric_keyboard_1" />
-        <Key android:codes="9" android:keyIcon="@drawable/miui_numeric_keyboard_2" />
-        <Key android:codes="10" android:keyEdgeFlags="right" android:keyIcon="@drawable/miui_numeric_keyboard_3" />
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="0.0dip"
+    android:keyHeight="@dimen/miui_numeric_keyboard_row_height"
+    android:keyWidth="33.329998%p"
+    android:verticalGap="0.0dip" >
+
+    <Row android:rowEdgeFlags="top" >
+
+        <Key
+            android:codes="8"
+            android:keyEdgeFlags="left"
+            android:keyIcon="@drawable/miui_numeric_keyboard_1" />
+
+        <Key
+            android:codes="9"
+            android:keyIcon="@drawable/miui_numeric_keyboard_2" />
+
+        <Key
+            android:codes="10"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@drawable/miui_numeric_keyboard_3" />
     </Row>
+
     <Row>
-        <Key android:codes="11" android:keyEdgeFlags="left" android:keyIcon="@drawable/miui_numeric_keyboard_4" />
-        <Key android:codes="12" android:keyIcon="@drawable/miui_numeric_keyboard_5" />
-        <Key android:codes="13" android:keyEdgeFlags="right" android:keyIcon="@drawable/miui_numeric_keyboard_6" />
+
+        <Key
+            android:codes="11"
+            android:keyEdgeFlags="left"
+            android:keyIcon="@drawable/miui_numeric_keyboard_4" />
+
+        <Key
+            android:codes="12"
+            android:keyIcon="@drawable/miui_numeric_keyboard_5" />
+
+        <Key
+            android:codes="13"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@drawable/miui_numeric_keyboard_6" />
     </Row>
+
     <Row>
-        <Key android:codes="14" android:keyEdgeFlags="left" android:keyIcon="@drawable/miui_numeric_keyboard_7" />
-        <Key android:codes="15" android:keyIcon="@drawable/miui_numeric_keyboard_8" />
-        <Key android:codes="16" android:keyEdgeFlags="right" android:keyIcon="@drawable/miui_numeric_keyboard_9" />
+
+        <Key
+            android:codes="14"
+            android:keyEdgeFlags="left"
+            android:keyIcon="@drawable/miui_numeric_keyboard_7" />
+
+        <Key
+            android:codes="15"
+            android:keyIcon="@drawable/miui_numeric_keyboard_8" />
+
+        <Key
+            android:codes="16"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@drawable/miui_numeric_keyboard_9" />
     </Row>
-    <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="5,1" android:keyEdgeFlags="left" android:keyLabel="@string/emergency_call_string" />
-        <Key android:codes="7" android:keyIcon="@drawable/miui_numeric_keyboard_0" />
-        <Key android:codes="2,62" android:keyEdgeFlags="right" android:keyLabel="@string/forget_password_string" />
+
+    <Row android:rowEdgeFlags="bottom" >
+
+        <Key
+            android:codes="5,1"
+            android:keyEdgeFlags="left"
+            android:keyLabel="@string/emergency_call_string" />
+
+        <Key
+            android:codes="7"
+            android:keyIcon="@drawable/miui_numeric_keyboard_0" />
+
+        <Key
+            android:codes="2,62"
+            android:keyEdgeFlags="right"
+            android:keyLabel="@string/forget_password_string" />
     </Row>
+
 </Keyboard>

@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector android:variablePadding="true"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:miui="http://schemas.android.com/apk/res/miui">
-    <item android:state_pressed="true" android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_pressed_bg_light" miui:state_single="true" />
-    <item android:state_selected="true" android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_selected_bg_light" miui:state_single="true" />
-    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_normal_bg_light" miui:state_single="true" />
-    <item android:state_pressed="true" android:drawable="@drawable/v5_edit_mode_bottom_bar_first_icon_pressed_bg_light" miui:state_first="true" />
-    <item android:state_selected="true" android:drawable="@drawable/v5_edit_mode_bottom_bar_first_icon_selected_bg_light" miui:state_first="true" />
-    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_first_icon_normal_bg_light" miui:state_first="true" />
-    <item android:state_pressed="true" android:drawable="@drawable/v5_edit_mode_bottom_bar_middle_icon_pressed_bg_light" miui:state_middle="true" />
-    <item android:state_selected="true" android:drawable="@drawable/v5_edit_mode_bottom_bar_middle_icon_selected_bg_light" miui:state_middle="true" />
-    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_middle_icon_normal_bg_light" miui:state_middle="true" />
-    <item android:state_pressed="true" android:drawable="@drawable/v5_edit_mode_bottom_bar_last_icon_pressed_bg_light" miui:state_last="true" />
-    <item android:state_selected="true" android:drawable="@drawable/v5_edit_mode_bottom_bar_last_icon_selected_bg_light" miui:state_last="true" />
-    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_last_icon_normal_bg_light" miui:state_last="true" />
-    <item android:state_pressed="true" android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_pressed_bg_light" />
-    <item android:state_selected="true" android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_selected_bg_light" />
-    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_normal_bg_light" />
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:miui="http://schemas.android.com/apk/res/miui" android:variablePadding="true">
+
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_pressed_bg_light" android:state_pressed="true" miui:state_single="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_selected_bg_light" android:state_selected="true" miui:state_single="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_normal_bg_light" miui:state_single="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_first_icon_pressed_bg_light" android:state_pressed="true" miui:state_first="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_first_icon_selected_bg_light" android:state_selected="true" miui:state_first="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_first_icon_normal_bg_light" miui:state_first="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_middle_icon_pressed_bg_light" android:state_pressed="true" miui:state_middle="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_middle_icon_selected_bg_light" android:state_selected="true" miui:state_middle="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_middle_icon_normal_bg_light" miui:state_middle="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_last_icon_pressed_bg_light" android:state_pressed="true" miui:state_last="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_last_icon_selected_bg_light" android:state_selected="true" miui:state_last="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_last_icon_normal_bg_light" miui:state_last="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_pressed_bg_light" android:state_pressed="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_selected_bg_light" android:state_selected="true"/>
+    <item android:drawable="@drawable/v5_edit_mode_bottom_bar_single_icon_normal_bg_light"/>
+
 </selector>

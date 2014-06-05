@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TwoLineListItem android:layout_width="fill_parent" android:layout_height="wrap_content" android:mode="twoLine" style="@miui:style/V5.Widget.ListView.Item.DoubleLine"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="?android:textAppearanceListItem" android:id="@*android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="?android:listPreferredItemPaddingStart" />
-    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@*android:id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@*android:id/text1" android:layout_alignLeft="@*android:id/text1" />
+<TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@miui:style/V5.Widget.ListView.Item.DoubleLine"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:mode="twoLine" >
+
+    <TextView
+        android:id="@*android:id/text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?android:listPreferredItemPaddingStart"
+        android:textAppearance="?android:textAppearanceListItem" />
+
+    <TextView
+        android:id="@*android:id/text2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@*android:id/text1"
+        android:layout_below="@*android:id/text1"
+        android:textAppearance="?android:textAppearanceSmall" />
+
 </TwoLineListItem>

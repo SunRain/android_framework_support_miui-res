@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:miui="http://schemas.android.com/apk/res/miui">
-    <miui.widget.NumberPicker android:id="@id/day" miui:state_first="true" style="@style/V5.Widget.DateTimePicker" />
-    <miui.widget.NumberPicker android:id="@id/hour" android:text="@string/v5_time_picker_label_hour" miui:state_middle="true" style="@style/V5.Widget.DateTimePicker" />
-    <miui.widget.NumberPicker android:id="@id/minute" android:text="@string/v5_time_picker_label_minute" miui:state_last="true" style="@style/V5.Widget.DateTimePicker" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:miui="http://schemas.android.com/apk/res/miui"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <miui.widget.NumberPicker
+        android:id="@id/day"
+        style="@style/V5.Widget.DateTimePicker"
+        miui:state_first="true" />
+
+    <miui.widget.NumberPicker
+        android:id="@id/hour"
+        style="@style/V5.Widget.DateTimePicker"
+        android:text="@string/v5_time_picker_label_hour"
+        miui:state_middle="true" />
+
+    <miui.widget.NumberPicker
+        android:id="@id/minute"
+        style="@style/V5.Widget.DateTimePicker"
+        android:text="@string/v5_time_picker_label_minute"
+        miui:state_last="true" />
+
 </LinearLayout>

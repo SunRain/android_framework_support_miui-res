@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<miui.widget.CheckedTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@*android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkMark="?android:listChoiceIndicatorMultiple" android:singleLine="true" android:paddingEnd="16.0dip" style="?android:attr/dropDownItemStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<miui.widget.CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@*android:id/text1"
+    style="?android:attr/dropDownItemStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:checkMark="?android:listChoiceIndicatorMultiple"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:paddingEnd="16.0dip"
+    android:singleLine="true" />

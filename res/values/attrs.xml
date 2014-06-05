@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <attr name="alpha_width" format="integer" />
     <attr name="arrowGreenUpBmp" format="reference" />
     <attr name="arrowRedUpBmp" format="reference" />
@@ -207,15 +208,15 @@
     <attr name="v5_preference_secondary_text_color" format="reference|color" />
     <attr name="btnRedBmp" format="reference" />
     <attr name="wrongColor" format="color" />
-    
-    <!--  add start -->
-        <attr name="listLayout" format="reference" />
-        <attr name="multiChoiceItemLayout" format="reference" />
-        <attr name="singleChoiceItemLayout" format="reference" />
-        <attr name="listItemLayout" format="reference" />
-        <attr name="panelMenuListTheme" format="reference" />
-        <attr name="searchDialogTheme" format="reference" />
- <attr name="timePickerStyle" format="reference" />
- <attr name="internalLayout" format="reference" />
+
+    <!-- add start -->
+    <attr name="listLayout" format="reference" />
+    <attr name="multiChoiceItemLayout" format="reference" />
+    <attr name="singleChoiceItemLayout" format="reference" />
+    <attr name="listItemLayout" format="reference" />
+    <attr name="panelMenuListTheme" format="reference" />
+    <attr name="searchDialogTheme" format="reference" />
+    <attr name="timePickerStyle" format="reference" />
+    <attr name="internalLayout" format="reference" />
 
 </resources>

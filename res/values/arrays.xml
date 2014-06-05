@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string-array name="alphabet_table">
         <item>\#</item>
         <item>A</item>
@@ -29,14 +30,17 @@
         <item>Y</item>
         <item>Z</item>
     </string-array>
-    <item type="array" name="android_common_nicknames">@*android:array/common_nicknames</item>
-    <item type="array" name="android_config_keyboardTapVibePattern">@*android:array/config_keyboardTapVibePattern</item>
-    <item type="array" name="android_config_longPressVibePattern">@*android:array/config_longPressVibePattern</item>
-    <item type="array" name="android_config_mobile_hotspot_provision_app">@*android:array/config_mobile_hotspot_provision_app</item>
-    <item type="array" name="android_config_virtualKeyVibePattern">@*android:array/config_virtualKeyVibePattern</item>
-    <item type="array" name="android_special_locale_codes">@*android:array/special_locale_codes</item>
-    <item type="array" name="android_special_locale_names">@*android:array/special_locale_names</item>
+
+    <item name="android_common_nicknames" type="array">@*android:array/common_nicknames</item>
+    <item name="android_config_keyboardTapVibePattern" type="array">@*android:array/config_keyboardTapVibePattern</item>
+    <item name="android_config_longPressVibePattern" type="array">@*android:array/config_longPressVibePattern</item>
+    <item name="android_config_mobile_hotspot_provision_app" type="array">@*android:array/config_mobile_hotspot_provision_app</item>
+    <item name="android_config_virtualKeyVibePattern" type="array">@*android:array/config_virtualKeyVibePattern</item>
+    <item name="android_special_locale_codes" type="array">@*android:array/special_locale_codes</item>
+    <item name="android_special_locale_names" type="array">@*android:array/special_locale_names</item>
+
     <array name="vibration_virtual_key_up" />
+
     <string-array name="detailed_am_pm_names">
         <item>AM</item>
         <item>AM</item>
@@ -46,6 +50,7 @@
         <item>PM</item>
         <item>PM</item>
     </string-array>
+
     <integer-array name="detailed_am_pm_segments">
         <item>0</item>
         <item>1</item>
@@ -55,6 +60,7 @@
         <item>18</item>
         <item>19</item>
     </integer-array>
+
     <string-array name="miui_font_scale">
         <item>1.0</item>
         <item>1.0</item>
@@ -170,6 +176,7 @@
         <item>zh_TW</item>
         <item>en_US</item>
     </string-array>
+
     <array name="v5_number_progress_numbers">
         <item>@drawable/v5_number_progress_view_0</item>
         <item>@drawable/v5_number_progress_view_1</item>
@@ -254,6 +261,7 @@
         <item>@drawable/v5_preference_first_item_bg_pressed</item>
         <item>@drawable/v5_edit_text_search_bg_light</item>
     </array>
+
     <string-array name="alphabet_table_with_starred">
         <item>!</item>
         <item>\#</item>
@@ -406,6 +414,7 @@
         <item>壬戌</item>
         <item>癸亥</item>
     </string-array>
+
     <integer-array name="vibration_recorder_minor_action">
         <item>0</item>
         <item>0</item>
@@ -574,4 +583,5 @@
         <item>0</item>
         <item>5</item>
     </integer-array>
+
 </resources>

@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:gravity="left|center" android:id="@id/selection_menu" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" style="?android:attr/borderlessButtonStyle" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@id/selection_menu"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="left|center"
+        android:singleLine="true" />
+
 </LinearLayout>
