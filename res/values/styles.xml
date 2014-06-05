@@ -27,7 +27,7 @@
         <item name="android:shadowDy">1.0</item>
         <item name="android:shadowRadius">0.2</item>
     </style>
-    <style name="V5" />
+    <style name="V5 />
     <style name="V5.AlertDialog" parent="@style/V5">
         <item name="android:fullDark">@*android:color/transparent</item>
         <item name="android:topDark">@*android:color/transparent</item>
@@ -40,10 +40,10 @@
         <item name="android:bottomMedium">@*android:color/transparent</item>
         <item name="android:centerMedium">@*android:color/transparent</item>
         <item name="android:layout">@layout/v5_alert_dialog</item>
-        <item name="android:listLayout">@layout/v5_select_dialog</item>
-        <item name="android:multiChoiceItemLayout">@layout/v5_select_dialog_multichoice</item>
-        <item name="android:singleChoiceItemLayout">@layout/v5_select_dialog_singlechoice</item>
-        <item name="android:listItemLayout">@layout/v5_select_dialog_item</item>
+        <item name="listLayout">@layout/v5_select_dialog</item>
+        <item name="multiChoiceItemLayout">@layout/v5_select_dialog_multichoice</item>
+        <item name="singleChoiceItemLayout">@layout/v5_select_dialog_singlechoice</item>
+        <item name="listItemLayout">@layout/v5_select_dialog_item</item>
     </style>
     <style name="V5.AlertDialog.GlobalAction" parent="@style/V5.AlertDialog">
         <item name="android:layout">@layout/v5_global_action</item>
@@ -335,9 +335,9 @@
         <item name="android:actionBarSplitStyle">@style/V5.Widget.ActionBar.Split</item>
         <item name="android:actionModeStyle">@style/V5.Widget.ActionMode</item>
         <item name="android:actionBarItemBackground">@null</item>
-        <item name="android:panelMenuListTheme">@style/V5.Theme.Light.CompactMenu</item>
-        <item name="android:timePickerStyle">@style/V5.Widget.TimePicker</item>
-        <item name="android:searchDialogTheme">@style/V5.Theme.Light.SearchBar</item>
+        <item name="panelMenuListTheme">@style/V5.Theme.Light.CompactMenu</item>
+        <item name="timePickerStyle">@style/V5.Widget.TimePicker</item>
+        <item name="searchDialogTheme">@style/V5.Theme.Light.SearchBar</item>
         <item name="miui_ui_version">5</item>
         <item name="slidingButtonStyleDefault">@style/V5.Widget.SlidingButton</item>
         <item name="v5_action_bar_title_layout">@layout/v5_action_bar_title_item</item>
@@ -556,9 +556,9 @@
         <item name="android:actionBarSplitStyle">@style/V5.Widget.ActionBar.Split</item>
         <item name="android:actionModeStyle">@style/V5.Widget.ActionMode</item>
         <item name="android:actionBarItemBackground">@null</item>
-        <item name="android:panelMenuListTheme">@style/V5.Theme.Light.CompactMenu</item>
-        <item name="android:timePickerStyle">@style/V5.Widget.TimePicker</item>
-        <item name="android:searchDialogTheme">@style/V5.Theme.Light.SearchBar</item>
+        <item name="panelMenuListTheme">@style/V5.Theme.Light.CompactMenu</item>
+        <item name="timePickerStyle">@style/V5.Widget.TimePicker</item>
+        <item name="searchDialogTheme">@style/V5.Theme.Light.SearchBar</item>
         <item name="miui_ui_version">5</item>
         <item name="slidingButtonStyleDefault">@style/V5.Widget.SlidingButton</item>
         <item name="v5_action_bar_title_layout">@layout/v5_action_bar_title_item</item>
@@ -923,7 +923,7 @@
     </style>
     <style name="V5.Widget.DatePicker" parent="@*android:style/Widget.DatePicker">
         <item name="android:calendarViewShown">false</item>
-        <item name="android:internalLayout">@layout/v5_date_picker</item>
+        <item name="internalLayout">@layout/v5_date_picker</item>
     </style>
     <style name="V5.Widget.DialogTitle" parent="@style/V5.Widget">
         <item name="android:textAppearance">@style/V5.TextAppearance.DialogTitle</item>
@@ -1208,7 +1208,7 @@
         <item name="android:textColor">?v5_button_text_color</item>
     </style>
     <style name="V5.Widget.TimePicker" parent="@style/V5.Widget">
-        <item name="android:internalLayout">@layout/v5_time_picker</item>
+        <item name="internalLayout">@layout/v5_time_picker</item>
     </style>
     <style name="V5.Widget.Title" parent="@style/V5.Widget">
         <item name="android:textAppearance">@style/V5.TextAppearance.Title</item>

@@ -209,9 +209,13 @@
     <attr name="wrongColor" format="color" />
     
     <!--  add start -->
-            <attr name="listLayout" format="reference" />
+        <attr name="listLayout" format="reference" />
         <attr name="multiChoiceItemLayout" format="reference" />
         <attr name="singleChoiceItemLayout" format="reference" />
         <attr name="listItemLayout" format="reference" />
-        
+        <attr name="panelMenuListTheme" format="reference" />
+        <attr name="searchDialogTheme" format="reference" />
+ <attr name="timePickerStyle" format="reference" />
+ <attr name="internalLayout" format="reference" />
+
 </resources>
