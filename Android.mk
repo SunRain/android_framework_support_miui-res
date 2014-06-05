@@ -1,10 +1,6 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-framework_res_source_path := APPS/framework-res_intermediates/src
-
-LOCAL_SDK_VERSION := current
-			
 LOCAL_PACKAGE_NAME := framework-miui-res
 LOCAL_CERTIFICATE := platform
 

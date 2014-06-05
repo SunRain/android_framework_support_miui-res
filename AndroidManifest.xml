@@ -20,7 +20,7 @@
     coreApp="true"
     package="miui"
     android:sharedUserId="android.uid.system"
-    android:sharedUserLabel="@string/android_system_label" >
+    android:sharedUserLabel="@*android:string/android_system_label" >
 
     <application
         android:allowClearUserData="false"

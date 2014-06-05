@@ -31,9 +31,12 @@
     <item name="android_notification_template_icon_bg" type="drawable">@*android:drawable/notification_template_icon_bg</item>
     <item name="android_overscroll_edge" type="drawable">@*android:drawable/overscroll_edge</item>
     <item name="android_overscroll_glow" type="drawable">@*android:drawable/overscroll_glow</item>
-    <item name="android_scrubber_control_disabled_holo" type="drawable">@*android:drawable/scrubber_control_disabled_holo</item>
-    <item name="android_scrubber_control_selector_holo" type="drawable">@*android:drawable/scrubber_control_selector_holo</item>
-    <item name="android_scrubber_primary_holo" type="drawable">@*android:drawable/scrubber_primary_holo</item>
+    <!-- use scrubber_control_disabled_holo_dark in kitkat  -->
+    <item name="android_scrubber_control_disabled_holo" type="drawable">@*android:drawable/scrubber_control_disabled_holo_dark</item>
+    <!-- use scrubber_control_selector_holo_dark in kitkat -->
+    <item name="android_scrubber_control_selector_holo" type="drawable">@*android:drawable/scrubber_control_selector_holo_dark</item>
+    <!-- use scrubber_primary_holo_dark in kitkat -->
+    <item name="android_scrubber_primary_holo" type="drawable">@*android:drawable/scrubber_primary_holo_dark</item>
     <item name="android_scrubber_progress_horizontal_holo_dark" type="drawable">@*android:drawable/scrubber_progress_horizontal_holo_dark</item>
     <item name="android_scrubber_track_holo_dark" type="drawable">@*android:drawable/scrubber_track_holo_dark</item>
     <item name="android_silent_mode_indicator" type="drawable">@*android:drawable/silent_mode_indicator</item>

@@ -14,8 +14,8 @@
     <item name="android_glowpadview_inner_radius" type="dimen">@*android:dimen/glowpadview_inner_radius</item>
     <item name="android_navigation_bar_height" type="dimen">@*android:dimen/navigation_bar_height</item>
     <item name="android_navigation_bar_width" type="dimen">@*android:dimen/navigation_bar_width</item>
-    <item name="android_notification_padding_left" type="dimen">@*android:dimen/notification_padding_left</item>
-    <item name="android_notification_padding_right" type="dimen">@*android:dimen/notification_padding_right</item>
+    <!-- item name="android_notification_padding_left" type="dimen">@*android:dimen/notification_padding_left</item -->
+    <!-- item name="android_notification_padding_right" type="dimen">@*android:dimen/notification_padding_right</item -->
     <item name="android_preference_fragment_padding_bottom" type="dimen">@*android:dimen/preference_fragment_padding_bottom</item>
     <item name="android_preference_fragment_padding_side" type="dimen">@*android:dimen/preference_fragment_padding_side</item>
     <item name="android_preference_item_padding_inner" type="dimen">@*android:dimen/preference_item_padding_inner</item>
@@ -98,7 +98,7 @@
 
     <item name="android_dropdownitem_text_padding_right" type="dimen">@*android:dimen/dropdownitem_text_padding_right</item>
     <item name="android_search_view_text_min_width" type="dimen">@*android:dimen/search_view_text_min_width</item>
-    <item name="android_notification_content_to_icon_length" type="dimen">@*android:dimen/notification_content_margin_left_to_icon</item>
+    <!-- item name="android_notification_content_to_icon_length" type="dimen">@*android:dimen/notification_content_margin_left_to_icon</item -->
 
     <dimen name="deprecated_1">0.0dip</dimen>
     <dimen name="deprecated_3">0.0dip</dimen>
@@ -127,8 +127,8 @@
     <dimen name="text_select_handle_no_shadow_min_height">15.0dip</dimen>
     <dimen name="v5_volume_panel_seeekbar_width">250.0dip</dimen>
 
-    <item name="android_notification_height" type="dimen">@*android:dimen/notification_height</item>
-    <item name="android_notification_action_height" type="dimen">@*android:dimen/notification_action_height</item>
+    <!-- item name="android_notification_height" type="dimen">@*android:dimen/notification_height</item -->
+    <!-- item name="android_notification_action_height" type="dimen">@*android:dimen/notification_action_height</item -->
 
     <dimen name="v5_widget_date_time_picker_text_size">20.0sp</dimen>
     <dimen name="window_background_blur_radius">5.0dip</dimen>
