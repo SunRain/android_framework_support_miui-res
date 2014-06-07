@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|center"
-        android:layout_marginTop="35.0dip"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop ="35dip"
         android:gravity="center"
-        android:orientation="vertical" >
-
+        android:orientation="vertical"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textAppearance="?android:attr/textAppearance"
             android:text="@string/screen_on_proximity_sensor_title"
-            android:textAppearance="?android:textAppearance" />
-
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableBottom="@drawable/screen_on_proximity_sensor_hint"
-            android:drawablePadding="50.0dip"
             android:gravity="center"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textSize="30dip"
             android:text="@string/screen_on_proximity_sensor_summary"
-            android:textAppearance="?android:textAppearance"
-            android:textSize="30.0dip" />
+            android:drawablePadding="50dip"
+            android:drawableBottom="@drawable/screen_on_proximity_sensor_hint"
+            />
     </LinearLayout>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="13.0dip"
+        android:layout_gravity="center_horizontal|bottom"
         android:gravity="center"
+        android:layout_marginBottom ="13dip"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/screen_on_proximity_sensor_hint"
-        android:textAppearance="?android:textAppearanceSmall" />
-
+        />
 </FrameLayout>

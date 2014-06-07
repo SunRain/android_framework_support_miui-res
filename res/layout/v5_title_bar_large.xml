@@ -1,98 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@miui:style/V5.Widget.Title.Large"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content" >
-
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
     <ImageView
-        android:id="@*android:id/home"
         style="@miui:style/V5.Widget.Title.Back.Large"
+        android:id="@android:id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:scaleType="center" />
-
+        android:scaleType="center"
+        />
     <FrameLayout
-        android:id="@*android:id/custom"
+        android:id="@android:id/custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toLeftOf="@*android:id/custom"
-        android:layout_toRightOf="@*android:id/home"
-        android:gravity="left|center"
-        android:orientation="vertical" >
-
+        android:layout_alignParentRight="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@android:id/home"
+        android:layout_toLeftOf="@android:id/custom"
+        android:layout_centerVertical="true"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical"
+        >
         <ImageView
-            android:id="@*android:id/toggle"
+            android:id="@android:id/toggle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:scaleType="center" />
-
+            android:scaleType="center"
+            />
         <view
-            android:id="@*android:id/primary"
+            class="miui.widget.MarqueeTextView"
             style="@miui:style/V5.TextAppearance.Title.Large"
-            android:layout_width="fill_parent"
+            android:id="@android:id/primary"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@android:id/toggle"
             android:layout_alignWithParentIfMissing="true"
-            android:layout_toLeftOf="@*android:id/toggle"
-            class="miui.widget.MarqueeTextView"
-            android:fadingEdgeLength="50.0dip"
-            android:gravity="left|center"
+            android:singleLine="true"
+            android:fadingEdgeLength="50dp"
             android:requiresFadingEdge="horizontal"
-            android:singleLine="true" />
-
+            android:gravity="left|center_vertical"
+            />
         <ImageView
-            android:id="@*android:id/icon"
+            android:id="@android:id/icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_below="@*android:id/toggle"
-            android:scaleType="center" />
+            android:layout_below="@android:id/toggle"
+            android:scaleType="center"
+            />
 
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@android:id/icon"
+            android:layout_below="@android:id/primary"
             android:layout_alignWithParentIfMissing="true"
-            android:layout_below="@*android:id/primary"
-            android:layout_toLeftOf="@*android:id/icon"
-            android:gravity="left|center"
-            android:orientation="horizontal" >
-
+            android:orientation="horizontal"
+            android:gravity="left|center_vertical">
             <TextView
-                android:id="@*android:id/message"
                 style="@miui:style/V5.TextAppearance.Title.Large.Secondary"
+                android:id="@android:id/message"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="left|center"
-                android:singleLine="true" />
-
+                android:singleLine="true"
+                android:gravity="left|center_vertical"
+                />
             <ImageView
-                android:id="@id/separator1"
+                android:id="@miui:id/separator1"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
-                android:scaleType="fitXY"
                 android:src="@drawable/v5_text_separator"
-                android:visibility="gone" />
-
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                />
             <TextView
-                android:id="@*android:id/hint"
                 style="@miui:style/V5.TextAppearance.Title.Large.Secondary"
+                android:id="@android:id/hint"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="left|center"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:gravity="left|center_vertical"
+                />
         </LinearLayout>
     </RelativeLayout>
-
 </RelativeLayout>

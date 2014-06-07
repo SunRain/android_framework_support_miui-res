@@ -1,131 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/android_parentPanel"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@miui:id/android_parentPanel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@drawable/v5_ic_lock_content_bg"
-    android:orientation="vertical" >
+    android:background="@drawable/v5_ic_lock_content_bg">
 
-    <LinearLayout
-        android:id="@id/android_topPanel"
+    <LinearLayout android:id="@miui:id/android_topPanel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-        <LinearLayout
-            android:id="@id/android_title_template"
+        android:orientation="vertical">
+        <LinearLayout android:id="@miui:id/android_title_template"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16.0dip"
-            android:layout_marginStart="16.0dip"
-            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|left"
             android:minHeight="@dimen/v5_alert_dialog_title_height"
-            android:orientation="horizontal" >
-
-            <ImageView
-                android:id="@id/android_icon"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip">
+            <ImageView android:id="@miui:id/android_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingEnd="8.0dip"
+                android:paddingRight="8dip"
                 android:src="@null"
                 android:visibility="gone" />
-
-            <com.android.internal.widget.DialogTitle
-                android:id="@id/android_alertTitle"
+            <com.android.internal.widget.DialogTitle android:id="@miui:id/android_alertTitle"
                 style="?android:attr/windowTitleStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:singleLine="true"
                 android:ellipsize="end"
-                android:singleLine="true" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
+        <!-- If the client uses a customTitle, it will be added here. -->
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@id/android_contentPanel"
+    <LinearLayout android:id="@miui:id/android_contentPanel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1.0"
-        android:orientation="vertical" >
-
-        <ScrollView
-            android:id="@id/android_scrollView"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ScrollView android:id="@miui:id/android_scrollView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:clipToPadding="false" >
-
-            <TextView
-                android:id="@id/android_message"
+            android:clipToPadding="false">
+            <TextView android:id="@miui:id/android_message"
                 style="?android:attr/textAppearanceMedium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8.0dip"
-                android:paddingEnd="16.0dip"
-                android:paddingStart="16.0dip"
-                android:paddingTop="8.0dip" />
+                android:paddingLeft="16dip"
+                android:paddingRight="16dip"
+                android:paddingTop="8dip"
+                android:paddingBottom="8dip"/>
         </ScrollView>
     </LinearLayout>
 
-    <FrameLayout
-        android:id="@id/android_customPanel"
+    <FrameLayout android:id="@miui:id/android_customPanel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1.0" >
-
-        <FrameLayout
-            android:id="@id/android_custom"
+        android:layout_weight="1">
+        <FrameLayout android:id="@miui:id/android_custom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </FrameLayout>
 
-    <LinearLayout
-        android:id="@id/android_buttonPanel"
+    <LinearLayout android:id="@miui:id/android_buttonPanel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:divider="?android:dividerHorizontal"
-        android:dividerPadding="0.0dip"
         android:minHeight="@dimen/v5_alert_dialog_button_bar_height"
         android:orientation="vertical"
-        android:showDividers="beginning" >
-
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="beginning"
+        android:dividerPadding="0dip">
         <LinearLayout
             style="?android:attr/buttonBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:measureWithLargestChild="true"
+            android:orientation="horizontal"
             android:minHeight="@dimen/v5_alert_dialog_button_bar_height"
-            android:orientation="horizontal" >
-
-            <Button
-                android:id="@*android:id/button2"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="0.0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
+            android:measureWithLargestChild="true">
+            <Button android:id="@android:id/button2"
+                android:layout_width="0dip"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:maxLines="2"
-                android:textSize="14.0sp" />
-
-            <Button
-                android:id="@*android:id/button3"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="0.0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
+                android:textSize="14sp"
+                android:layout_height="wrap_content" />
+            <Button android:id="@android:id/button3"
+                android:layout_width="0dip"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:maxLines="2"
-                android:textSize="14.0sp" />
-
-            <Button
-                android:id="@*android:id/button1"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="0.0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
+                android:textSize="14sp"
+                android:layout_height="wrap_content" />
+            <Button android:id="@android:id/button1"
+                android:layout_width="0dip"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:maxLines="2"
-                android:textSize="14.0sp" />
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="14sp"
+                android:layout_height="wrap_content" />
         </LinearLayout>
-    </LinearLayout>
-
+     </LinearLayout>
 </LinearLayout>
+

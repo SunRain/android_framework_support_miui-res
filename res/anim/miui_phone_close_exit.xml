@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <translate xmlns:android="http://schemas.android.com/apk/res/android"
-    android:duration="200"
-    android:fillAfter="true"
-    android:fillBefore="true"
-    android:fillEnabled="true"
-    android:fromYDelta="0.0"
-    android:interpolator="@*android:anim/accelerate_interpolator"
-    android:toYDelta="100.0%p"
-    android:zAdjustment="top" />
+        android:zAdjustment="top"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:fromYDelta="0" android:toYDelta="100%p"
+        android:fillEnabled="true" android:fillBefore="true" android:fillAfter="true"
+        android:duration="200" />

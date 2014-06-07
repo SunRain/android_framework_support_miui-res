@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <miui.widget.CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@*android:id/text1"
-    style="?android:attr/dropDownItemStyle"
-    android:layout_width="fill_parent"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:checkMark="@drawable/v5_dialog_btn_radio_light"
-    android:ellipsize="end"
     android:gravity="center_vertical"
-    android:paddingEnd="16.0dip"
-    android:paddingStart="0.0dip"
-    android:singleLine="true" />
+    android:checkMark="@miui:drawable/v5_dialog_btn_radio_light"
+    android:ellipsize="end"
+    style="?android:attr/dropDownItemStyle"
+    android:paddingLeft="0dip"
+    android:singleLine="true"
+    android:paddingRight="16dip"
+/>

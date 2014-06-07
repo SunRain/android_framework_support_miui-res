@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-
-    <item name="android_config_MaxConcurrentDownloadsAllowed" type="integer">@*android:integer/config_MaxConcurrentDownloadsAllowed</item>
-    <item name="android_config_criticalBatteryWarningLevel" type="integer">@*android:integer/config_criticalBatteryWarningLevel</item>
-    <item name="android_config_downloadDataDirLowSpaceThreshold" type="integer">@*android:integer/config_downloadDataDirLowSpaceThreshold</item>
-    <item name="android_config_downloadDataDirSize" type="integer">@*android:integer/config_downloadDataDirSize</item>
-    <item name="android_config_lowBatteryCloseWarningLevel" type="integer">@*android:integer/config_lowBatteryCloseWarningLevel</item>
-    <item name="android_config_lowBatteryWarningLevel" type="integer">@*android:integer/config_lowBatteryWarningLevel</item>
-    <item name="android_config_screenBrightnessDim" type="integer">@*android:integer/config_screenBrightnessDim</item>
-    <item name="android_preference_fragment_scrollbarStyle" type="integer">@*android:integer/preference_fragment_scrollbarStyle</item>
-
-    <integer name="config_defaultNotificationLedFreq">4000</integer>
-    <integer name="config_screen_on_proximity_sensor_first_change_delay">10</integer>
-    <integer name="config_show_rounded_corners_default">1</integer>
+    <!-- Max duration of anchoring -->
     <integer name="v5_max_anchor_duration">300</integer>
-    <integer name="v5_max_visible_tab_count">4</integer>
-    <integer name="anti_stranger_call_enabled">1</integer>
-    <integer name="config_mp3_record_quality">2</integer>
 
+    <!-- Max visible tab count -->
+    <integer name="v5_max_visible_tab_count">4</integer>
 </resources>

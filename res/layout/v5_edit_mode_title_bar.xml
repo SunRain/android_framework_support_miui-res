@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@miui:style/V5.Widget.EditMode.TopBar"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center" >
+    android:gravity="center"
+    >
 
     <TextView
-        android:id="@*android:id/button1"
+        android:id="@android:id/button1"
         style="@miui:style/V5.Widget.EditMode.TopBar.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@*android:string/cancel" />
+        android:text="@android:string/cancel"/>
 
     <TextView
-        android:id="@*android:id/title"
-        android:layout_width="0.0dip"
+        android:id="@android:id/title"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1.0"
+        android:layout_weight="1"
         android:ellipsize="end"
-        android:gravity="center"
         android:singleLine="true"
-        android:text="@string/v5_edit_mode_title_empty"
-        android:textAppearance="@style/V5.TextAppearance.EditMode"
-        android:textColor="?v5_edit_mode_text_color" />
+        android:gravity="center"
+        android:textAppearance="@miui:style/V5.TextAppearance.EditMode"
+        android:text="@miui:string/v5_edit_mode_title_empty"
+        android:textColor="?miui:attr/v5_edit_mode_text_color" />
 
     <TextView
-        android:id="@*android:id/button2"
+        android:id="@android:id/button2"
         style="@miui:style/V5.Widget.EditMode.TopBar.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/v5_select_all" />
+        android:text="@miui:string/v5_select_all"/>
 
 </LinearLayout>

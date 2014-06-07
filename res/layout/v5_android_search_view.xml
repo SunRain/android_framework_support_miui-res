@@ -1,120 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/android_search_bar"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="horizontal" >
+<!--
+/*
+ * Copyright (C) 2010 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@miui:id/android_search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <!-- This is actually used for the badge icon *or* the badge label (or neither) -->
     <TextView
-        android:id="@id/android_search_badge"
+        android:id="@miui:id/android_search_badge"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_marginBottom="2.0dip"
-        android:drawablePadding="0.0dip"
+        android:layout_height="match_parent"
         android:gravity="center_vertical"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:textColor="?android:textColorPrimary"
-        android:visibility="gone" />
+        android:layout_marginBottom="2dip"
+        android:drawablePadding="0dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="?android:attr/textColorPrimary"
+        android:visibility="gone"
+    />
 
     <ImageView
-        android:id="@id/android_search_button"
+        android:id="@miui:id/android_search_button"
         style="?android:attr/actionButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
-        android:contentDescription="@string/android_searchview_description_search" />
+        android:contentDescription="@miui:string/android_searchview_description_search"
+    />
 
     <LinearLayout
-        android:id="@id/android_search_edit_frame"
+        android:id="@miui:id/android_search_edit_frame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:layout_gravity="center_vertical"
-        android:layout_marginBottom="4.0dip"
-        android:layout_marginTop="4.0dip"
-        android:layout_weight="1.0"
-        android:background="?searchViewTextField"
-        android:clipChildren="false"
+        android:layout_marginTop="4dip"
+        android:layout_marginBottom="4dip"
+        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:orientation="horizontal" >
+        android:background="?miui:attr/searchViewTextField"
+        android:clipChildren="false">
 
         <ImageView
-            android:id="@id/android_search_mag_icon"
+            android:id="@miui:id/android_search_mag_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:scaleType="centerInside"
-            android:visibility="gone" />
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+        />
 
+        <!-- Inner layout contains the app icon, button(s) and EditText -->
         <LinearLayout
-            android:id="@id/android_search_plate"
+            android:id="@miui:id/android_search_plate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_gravity="center_vertical"
-            android:layout_weight="1.0"
             android:gravity="center_vertical"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
-            <view
-                android:id="@id/android_search_src_text"
-                android:layout_width="0.0dip"
+            <view class="android.widget.SearchView$SearchAutoComplete"
+                android:id="@miui:id/android_search_src_text"
                 android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:minWidth="@miui:dimen/android_search_view_text_min_width"
                 android:layout_gravity="center"
-                android:layout_weight="1.0"
-                class="android.widget.SearchView$SearchAutoComplete"
-                android:background="@null"
-                android:contentDescription="@string/android_searchview_description_query"
-                android:dropDownAnchor="@id/android_search_edit_frame"
-                android:dropDownHeight="wrap_content"
-                android:dropDownHorizontalOffset="0.0dip"
-                android:dropDownVerticalOffset="0.0dip"
-                android:ellipsize="end"
                 android:gravity="center_vertical"
+                android:paddingRight="@miui:dimen/android_dropdownitem_text_padding_right"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:background="@null"
+                android:inputType="text|textAutoComplete|textNoSuggestions"
                 android:imeOptions="actionSearch"
-                android:inputType="textAutoComplete|textNoSuggestions"
-                android:minWidth="@dimen/android_search_view_text_min_width"
-                android:paddingEnd="@dimen/android_dropdownitem_text_padding_right"
-                android:singleLine="true" />
+                android:dropDownHeight="wrap_content"
+                android:dropDownAnchor="@miui:id/android_search_edit_frame"
+                android:dropDownVerticalOffset="0dip"
+                android:dropDownHorizontalOffset="0dip"
+                android:contentDescription="@miui:string/android_searchview_description_query"
+            />
 
             <ImageView
-                android:id="@id/android_search_close_btn"
+                android:id="@miui:id/android_search_close_btn"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
-                android:background="@*android:color/transparent"
-                android:contentDescription="@string/android_searchview_description_clear"
+                android:background="@android:color/transparent"
+                android:src="?miui:attr/searchViewCloseIcon"
                 android:focusable="true"
-                android:src="?searchViewCloseIcon" />
+                android:contentDescription="@miui:string/android_searchview_description_clear"
+            />
+
         </LinearLayout>
 
         <LinearLayout
-            android:id="@id/android_submit_area"
+            android:id="@miui:id/android_submit_area"
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:background="?searchViewTextFieldRight"
-            android:clipChildren="false"
-            android:orientation="horizontal" >
+            android:layout_height="match_parent"
+            android:background="?miui:attr/searchViewTextFieldRight"
+            android:clipChildren="false">
 
             <ImageView
-                android:id="@id/android_search_go_btn"
+                android:id="@miui:id/android_search_go_btn"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
-                android:background="@*android:color/transparent"
-                android:contentDescription="@string/android_searchview_description_submit"
+                android:background="@android:color/transparent"
+                android:src="?miui:attr/searchViewGoIcon"
+                android:visibility="gone"
                 android:focusable="true"
-                android:src="?searchViewGoIcon"
-                android:visibility="gone" />
+                android:contentDescription="@miui:string/android_searchview_description_submit"
+            />
 
             <ImageView
-                android:id="@id/android_search_voice_btn"
+                android:id="@miui:id/android_search_voice_btn"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
-                android:background="@*android:color/transparent"
-                android:contentDescription="@string/android_searchview_description_voice"
+                android:src="?miui:attr/searchViewVoiceIcon"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
                 android:focusable="true"
-                android:src="?searchViewVoiceIcon"
-                android:visibility="gone" />
+                android:contentDescription="@miui:string/android_searchview_description_voice"
+            />
         </LinearLayout>
     </LinearLayout>
 
