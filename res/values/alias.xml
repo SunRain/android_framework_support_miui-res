@@ -156,7 +156,7 @@
     <item type="id" name="android_day">@*android:id/day</item>
     <item type="id" name="android_year">@*android:id/year</item>
     <item type="id" name="android_calendar_view">@*android:id/calendar_view</item>
-    <item type="id" name="android_timePickerLayout">0</item>
+    <item type="id" name="android_timePickerLayout">@*android:id/timePickerLayout</item>
     <item type="id" name="android_hour">@*android:id/hour</item>
     <item type="id" name="android_minute">@*android:id/minute</item>
     <item type="id" name="android_amPm">@*android:id/amPm</item>
@@ -170,8 +170,9 @@
     <item type="id" name="android_top_action_bar">@*android:id/top_action_bar</item>
     -->
     <item type="id" name="android_emergencyCallButton">@miui:id/emergencyCallButton</item>
-    <item type="id" name="android_resolver_grid">@miui:id/resolver_grid</item>
-    <item type="id" name="android_top_action_bar">@miui:id/top_action_bar</item>
+    <item type="id" name="android_resolver_grid">@*android:id/resolver_list</item >
+    <item type="id" name="android_top_action_bar">0</item>
+    <item type="id" name="android_notification_content">@*android:id/text</item>
 
     <item type="id" name="android_radio">@*android:id/radio</item>
     <item type="id" name="android_search_badge">@*android:id/search_badge</item>
@@ -301,8 +302,8 @@
     <item type="layout" name="android_resolver_grid">@*android:layout/resolver_grid</item>
     <item type="layout" name="android_screen_action_bar_overlay">@*android:layout/screen_action_bar_overlay</item>
     -->
-    <item type="layout" name="android_resolver_grid">@miui:layout/resolver_grid</item>
-    <item type="layout" name="android_screen_action_bar_overlay">@miui:layout/screen_action_bar_overlay</item>
+    <item type="layout" name="android_resolver_grid">@*android:layout/resolver_list</item>
+    <item type="layout" name="android_screen_action_bar_overlay">@*android:layout/screen_action_bar</item>
     
     <item type="layout" name="android_resolve_list_item">@*android:layout/resolve_list_item</item>
     <item type="layout" name="android_screen_action_bar">@*android:layout/screen_action_bar</item>
